@@ -35,7 +35,10 @@ This repository is automatically updated with new releases from the theme reposi
 
 ## License
 
-This work is published under [MIT][mit] License.
+- **Template code**: Licensed under the MIT License (see `template/LICENSE-MIT`)
+- **Blog content (posts, images, media)**: All rights reserved © Andrew Ke, 2025
+
+You are free to use and modify the template code under the MIT License, but you may not reuse or redistribute the written or visual content without permission.
 
 [gem]: https://rubygems.org/gems/jekyll-theme-chirpy
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
