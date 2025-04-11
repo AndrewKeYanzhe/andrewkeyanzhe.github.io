@@ -588,61 +588,101 @@
     return _createClass(ZoomImages, [{
       key: "zoomIn",
       value: function zoomIn(e) {
-        var winWidth = this.widowWidth();
+        const winWidth = this.widowWidth();
         if (this.zoomedIn || winWidth <= 768) {
           return;
         }
-      
-        var img = this.img;
-        var rect = img.getBoundingClientRect();  // Get the image's bounding box
-      
-        // Log image coordinates
-        console.log('Image coordinates:', rect);
-      
-        var clickX = e.clientX - rect.left;  // X position of the click relative to the image
-        var clickY = e.clientY - rect.top;   // Y position of the click relative to the image
-      
-        // Log mouse click coordinates
-        console.log('Mouse click coordinates relative to image:', { clickX, clickY });
-      
+    
+        const img = this.img;
+        const rect = img.getBoundingClientRect();
+
+        console.log(` `)
+        console.log(`img scaled width: ${rect.width}, img scaled height: ${rect.height}`);
+    
         img.setAttribute('data-style', img.getAttribute('style'));
         img.style.maxWidth = img.naturalWidth + 'px';
         img.style.maxHeight = img.naturalHeight + 'px';
-      
+        img.style.cursor = 'grab';
+
+        console.log(`img natural width: ${img.naturalWidth}, img natural height: ${img.naturalHeight}`);
+
+        
+    
+        // Enable native scrolling by setting overflow on the larger parent container
+        const largerParent = this.slide.querySelector('.ginner-container');
+
+        console.log(`largerParent.clientWidth: ${largerParent.clientWidth}, largerParent.clientHeight: ${largerParent.clientHeight}`);
+
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        console.log(`Viewport Width: ${viewportWidth}px`);
+        console.log(`Viewport Height: ${viewportHeight}px`);
+
+        
+
+        if (largerParent) {
+          largerParent.style.overflow = 'auto';
+          largerParent.style.setProperty('height', '100vh', 'important');
+          largerParent.style.setProperty('justify-content', 'unset', 'important');
+          // largerParent.style.setProperty('width', '100vw', 'important');
+
+
+        }
+
+
+    
         // Calculate the center offset for zoom positioning
         if (img.naturalWidth > winWidth) {
-          // var centerX = winWidth / 2 - img.naturalWidth / 2;
-          // var centerY = window.innerHeight / 2 - img.naturalHeight / 2;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const zoomRatio = img.naturalWidth / rect.width;
 
-          var centerX = rect.width/2;
-          var centerY = rect.height/2;
+          console.log(`zoomRatio: ${zoomRatio}`);
+    
+          const clickX = e.clientX - rect.left;
+          const clickY = e.clientY - rect.top;
 
-          console.log('Center coordinates:', { centerX, centerY });
+          console.log(`e.clientX: ${e.clientX}, e.clientY: ${e.clientY}`);
 
-          console.log('Image natural size:', { width: img.naturalWidth, height: img.naturalHeight });
+          var scrollableWidth = largerParent.scrollWidth - largerParent.clientWidth;
+          var scrollableHeight = largerParent.scrollHeight - largerParent.clientHeight;
 
-          var zoomRatio = img.naturalWidth / rect.width;
+          console.log(`scrollableWidth: ${scrollableWidth}, scrollableHeight: ${scrollableHeight}`);
+ 
 
-          console.log('Zoom ratio:', zoomRatio);
+          console.log(`clickX: ${clickX}, clickY: ${clickY}`);
+    
+          const offsetX = (zoomRatio - 1) * (clickX - centerX) * -1;
+          const offsetY = (zoomRatio - 1) * (clickY - centerY) * -1;
+    
+          console.log(`offsetX: ${offsetX}, offsetY: ${offsetY}`);
+
+
+
+          console.log(`largerParent.clientWidth: ${largerParent.clientWidth}, largerParent.clientHeight: ${largerParent.clientHeight}`);
+
+
+          // (clickX-viewportWidth/2) is to align mouse. it is the difference between mouse position and center of the screen
+
+          var scrollX = clickX*zoomRatio - viewportWidth/2 - (clickX-viewportWidth/2) -rect.left ;
+          var scrollY = clickY*zoomRatio - viewportHeight/2- (clickY-viewportHeight/2)-rect.top;
+
+          // var scrollX = clickX*zoomRatio - viewportWidth/2 - (clickX-viewportWidth/2)  ;
+          // var scrollY = clickY*zoomRatio - viewportHeight/2- (clickY-viewportHeight/2);
+
           
-      
-          // Adjust the zoom center position based on the click point
-          // var offsetX = (clickX / img.naturalWidth) * img.naturalWidth - (winWidth / 2);
-          // var offsetY = (clickY / img.naturalHeight) * img.naturalHeight - (window.innerHeight / 2);
-          // var offsetX=0;
-          // var offsetY=0;
+          console.log(`scrollX: ${scrollX}, scrollY: ${scrollY}`);
 
-          // clickX and Y are relative to top left corner of the image
-
-          var offsetX = (zoomRatio-1)*(clickX-centerX)*-1;
-          var offsetY = (zoomRatio-1)*(clickY-centerY)*-1;
-
-          console.log('Offset coordinates:', { offsetX, offsetY });
           
-          this.setTranslate(this.img.parentNode,offsetX,offsetY);
-          // this.setTranslate(this.img.parentNode, centerX - offsetX, centerY - offsetY);
+          // Set scroll position using offsetX and offsetY
+          if (largerParent) {
+            largerParent.scrollLeft = scrollX;
+            largerParent.scrollTop = scrollY;
+
+
+          }
         }
-      
         this.slide.classList.add('zoomed');
         this.zoomedIn = true;
       }
@@ -650,8 +690,16 @@
     }, {
       key: "zoomOut",
       value: function zoomOut() {
-        this.img.parentNode.setAttribute('style', '');
-        this.img.setAttribute('style', this.img.getAttribute('data-style'));
+        const img = this.img;
+        const largerParent = this.slide.querySelector('.ginner-container');
+    
+        if (largerParent) {
+          largerParent.style.overflow = ''; // Reset overflow
+          largerParent.style.maxHeight = ''; // Reset max height
+          largerParent.style.justifyContent = ''; // Reset justify content
+        }
+    
+        img.setAttribute('style', img.getAttribute('data-style'));
         this.slide.classList.remove('zoomed');
         this.zoomedIn = false;
         this.currentX = null;
@@ -660,7 +708,8 @@
         this.initialY = null;
         this.xOffset = 0;
         this.yOffset = 0;
-        if (this.onclose && typeof this.onclose == 'function') {
+    
+        if (this.onclose && typeof this.onclose === 'function') {
           this.onclose();
         }
       }
@@ -1825,7 +1874,6 @@
         this.longTap.del();
         this.singleTap.del();
         this.pressMove.del();
-        this.twoFingerPressMove.del();
         this.touchMove.del();
         this.touchEnd.del();
         this.touchCancel.del();
