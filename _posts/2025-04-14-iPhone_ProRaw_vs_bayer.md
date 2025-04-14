@@ -2,7 +2,8 @@
 title: iPhone HEIC vs ProRaw vs bayer raw
 # description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 # author: Andrew Ke
-date: 2025-04-14 18:03:00 +0000
+# Daylight savings should use GMT+1
+date: 2025-04-14 18:03:00 +0100
 # categories: [Blogging, Demo]
 # tags: [typography]
 pin: true
