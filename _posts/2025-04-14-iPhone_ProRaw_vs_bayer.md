@@ -27,6 +27,9 @@ This is the ProRaw image captured by the stock camera app, converted into HDR AV
 This is the bayer raw image captured by the No Fusion-Powerful Pro Cam app and converted in HDR AVIF by Lightroom using the Adobe neutral profile. Sharpening and noise reduction are set to 0.
 ![bayer](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF)
 
+This is the HEIF image captured by the No Fusion-Powerful Pro Cam app, using the bayer raw as source (HEIF+ option). Sharpening is set to 0, but we can observe some noise reduction being applied. The HEIF file is converted to JPG for viewing in Chrome.
+![bayer](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5589.JPG)
+
 
 
 <!-- _Image Caption_ -->
