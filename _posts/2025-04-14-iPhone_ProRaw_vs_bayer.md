@@ -15,21 +15,61 @@ math: true
 
 ---
 
+<!-- https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md -->
+
 HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with XDR display + Google Chrome.
 
 All images are captured on the iPhone 14 Pro Max's ultra wide angle camera.
 
-This is the HEIF image captured by the stock camera app, and the HEIF is converted into HDR AVIF by Lightroom (Chrome doesn't support HEIF). The converted image looks identical to the original HEIF when viewed in the iPhone Photos app.
-![heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF)
+<!-- {: .d-flex .justify-content-center }
+![heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF){: .normal .mw-33 .me-2}
+![proRaw](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF){: .normal .mw-33 .me-2}
+![bayer_raw](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF){: .normal .mw-33}
 
-This is the ProRaw image captured by the stock camera app, converted into HDR AVIF by Lightroom with sharpening set to 0. 
+{: .d-flex .justify-content-center }
+_abc_
+
+<p>
+<img
+  src="https://assets.digitalocean.com/articles/alligator/css/object-fit/example-object-fit.jpg"
+  width="600"
+  height="337"
+  style="width: 300px; height: 337px; object-fit: cover; object-position: 100% 0;"
+
+/>
+</p> -->
+
+
+
+<div class="d-flex justify-content-center">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 48%; margin-right: 0.5rem;">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%; margin-right: 0.5rem;">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%;">
+</div>
+
+{: .d-flex .justify-content-center }
+_1. HEIF     2. ProRaw with 0 sharpening     3. AVIF from bayer raw_
+
+#### **1. HEIF image captured by the stock camera app**
+The HEIF image is converted into HDR AVIF by Lightroom (Chrome doesn't support HEIF). The converted image looks identical to the original HEIF when viewed in the iPhone Photos app.
+![heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF)
+_abc_
+
+#### **2. ProRaw image captured by the stock camera app**
+The ProRaw image is converted into HDR AVIF by Lightroom with sharpening set to 0. 
 ![proRaw](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF)
 
-This is the bayer raw image captured by the No Fusion-Powerful Pro Cam app and converted in HDR AVIF by Lightroom using the Adobe neutral profile. Sharpening and noise reduction are set to 0.
-![bayer](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF)
+#### **3. Bayer raw image converted to HDR AVIF**
+The bayer raw image is captured by the No Fusion-Powerful Pro Cam app and converted to HDR AVIF by Lightroom using the Adobe neutral profile. Sharpening and noise reduction are set to 0.
+![bayer_raw](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF)
 
+
+#### **4. SDR HEIF converted from bayer raw (No Fusion app)**
 This is the HEIF image captured by the No Fusion-Powerful Pro Cam app, using the bayer raw as source (HEIF+ option). Sharpening is set to 0, but we can observe some noise reduction being applied. The HEIF file is converted to JPG for viewing in Chrome.
-![bayer](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5589.JPG)
+![bayer_heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5589.JPG)
 
 
 
