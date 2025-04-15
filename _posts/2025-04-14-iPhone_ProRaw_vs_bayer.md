@@ -53,9 +53,13 @@ _abc_
        alt="Bayer RAW format image">
 </div>
 
-
-{: .d-flex .justify-content-center }
-_1. HEIF     2. ProRaw with 0 sharpening     3. AVIF from bayer raw_
+<!-- mt2 adds a bit of spacing before element -->
+<!-- <div class="d-flex justify-content-center mt-2" style="gap: 0.5rem;"> -->
+<div class="d-flex justify-content-center" style="gap: 0.5rem;">
+  <div style="width: 300px; text-align: center;">1. HEIF</div>
+  <div style="width: 300px; text-align: center;">2. ProRAW with 0 sharpening</div>
+  <div style="width: 300px; text-align: center;">3. AVIF from Bayer RAW</div>
+</div>
 
 #### **1. HEIF image captured by the stock camera app**
 The HEIF image is converted into HDR AVIF by Lightroom (Chrome doesn't support HEIF). The converted image looks identical to the original HEIF when viewed in the iPhone Photos app.
