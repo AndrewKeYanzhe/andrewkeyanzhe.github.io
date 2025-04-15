@@ -82,6 +82,23 @@ _abc_
   <div style="width: 300px; text-align: center;">3. AVIF from Bayer RAW</div>
 </div>
 
+<div class="d-flex justify-content-center">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 45% 53%; margin-right: 0.5rem;"
+       alt="HEIF format image">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 44% 49%; margin-right: 0.5rem;"
+       alt="ProRAW format image">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 45% 50%;"
+       alt="Bayer RAW format image">
+</div>
+<div class="d-flex justify-content-center" style="gap: 0.5rem;">
+  <div style="width: 300px; text-align: center;">1. HEIF</div>
+  <div style="width: 300px; text-align: center;">2. ProRAW with 0 sharpening</div>
+  <div style="width: 300px; text-align: center;">3. AVIF from Bayer RAW</div>
+</div>
+
 #### **1. HEIF image captured by the stock camera app**
 The HEIF image is converted into HDR AVIF by Lightroom (Chrome doesn't support HEIF). The converted image looks identical to the original HEIF when viewed in the iPhone Photos app.
 ![heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF)
