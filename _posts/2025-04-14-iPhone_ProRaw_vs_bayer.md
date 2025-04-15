@@ -46,10 +46,31 @@ _abc_
        style="width: 300px; height: 337px; object-fit: none; object-position: 80% 48%; margin-right: 0.5rem;"
        alt="HEIF format image">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF"
-       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%; margin-right: 0.5rem;"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 79% 44%; margin-right: 0.5rem;"
        alt="ProRAW format image">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF"
        style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%;"
+       alt="Bayer RAW format image">
+</div>
+
+<!-- mt2 adds a bit of spacing before element -->
+<!-- <div class="d-flex justify-content-center mt-2" style="gap: 0.5rem;"> -->
+<div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem;">
+  <div style="width: 300px; text-align: center;">1. HEIF</div>
+  <div style="width: 300px; text-align: center;">2. ProRAW with 0 sharpening</div>
+  <div style="width: 300px; text-align: center;">3. AVIF from Bayer RAW</div>
+</div>
+
+
+<div class="d-flex justify-content-center">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 88% 58%; margin-right: 0.5rem;"
+       alt="HEIF format image">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 87% 54%; margin-right: 0.5rem;"
+       alt="ProRAW format image">
+  <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF"
+       style="width: 300px; height: 337px; object-fit: none; object-position: 88% 55%;"
        alt="Bayer RAW format image">
 </div>
 
