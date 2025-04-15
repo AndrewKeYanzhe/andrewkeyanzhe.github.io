@@ -39,7 +39,7 @@ _abc_
 />
 </p> -->
 
-
+#### 100% crops
 
 <div class="d-flex justify-content-center">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF"
