@@ -85,7 +85,7 @@ _abc_
 #### **1. HEIF image captured by the stock camera app**
 The HEIF image is converted into HDR AVIF by Lightroom (Chrome doesn't support HEIF). The converted image looks identical to the original HEIF when viewed in the iPhone Photos app.
 ![heif](assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF)
-_abc_
+
 
 #### **2. ProRaw image captured by the stock camera app**
 The ProRaw image is converted into HDR AVIF by Lightroom with sharpening set to 0. 
