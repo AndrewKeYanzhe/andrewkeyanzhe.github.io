@@ -43,12 +43,16 @@ _abc_
 
 <div class="d-flex justify-content-center">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5587.AVIF"
-       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 48%; margin-right: 0.5rem;">
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 48%; margin-right: 0.5rem;"
+       alt="HEIF format image">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5586.AVIF"
-       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%; margin-right: 0.5rem;">
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%; margin-right: 0.5rem;"
+       alt="ProRAW format image">
   <img src="assets/2025-04-14-iPhone_ProRaw_vs_bayer/IMG_5585.AVIF"
-       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%;">
+       style="width: 300px; height: 337px; object-fit: none; object-position: 80% 45%;"
+       alt="Bayer RAW format image">
 </div>
+
 
 {: .d-flex .justify-content-center }
 _1. HEIF     2. ProRaw with 0 sharpening     3. AVIF from bayer raw_
