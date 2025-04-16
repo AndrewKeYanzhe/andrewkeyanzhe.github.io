@@ -19,7 +19,7 @@ math: true
 
 HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with XDR display + Google Chrome. 
 
-Note: 12 bit PQ HDR AVIF files are not supported on older Safari versions. Safari Technology Preview Release 216 (Safari 18.4, released on April 3, 2025) supports displaying PQ HDR AVIF files, but some bugs may remain (color banding, HDR disabled in lightbox view)
+Note: 12 bit PQ HDR AVIF files are not supported on older Safari versions. Safari Technology Preview Release 216 (Safari 18.4, released on April 3, 2025) supports displaying PQ HDR AVIF files, but some bugs may remain (color banding, reduced highlight luminance, HDR disabled in lightbox view)
 
 All images are captured on the iPhone 14 Pro Max's ultra wide angle camera.
 
