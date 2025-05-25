@@ -62,7 +62,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: 490441141
+    id: G-SRJCLX8XBN
       # google analytics property ID
   goatcounter:
     id: # fill in your GoatCounter ID
