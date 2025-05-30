@@ -3,9 +3,9 @@ title: Cambridge Engineering Integrated Design Project
 # description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 # author: Andrew Ke
 date: 2022-11-15 11:33:00 +0000
-# categories: [Blogging, Demo]
+categories: [School projects]
 tags: [University of Cambridge, robotics]
-pin: true
+# pin: true
 math: true
 # mermaid: true
 

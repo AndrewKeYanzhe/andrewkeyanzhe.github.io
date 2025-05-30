@@ -3,9 +3,9 @@ title: Visit to Paris and Strasbourg
 # description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 # author: Andrew Ke
 date: 2025-04-09 11:33:00 +0000
-# categories: [Blogging, Demo]
+categories: [Travel]
 tags: [HDR]
-pin: true
+# pin: true
 math: true
 # mermaid: true
 
