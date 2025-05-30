@@ -39,12 +39,13 @@ social:
   name: Andrew Ke
   email: example@domain.com # change to your email address
   links:
+    - https://www.linkedin.com/in/andrew-ke-35058812a/
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/AndrewKeYanzhe # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/andrew-ke-35058812a/
+    
 
 # Site Verification Settings
 webmaster_verifications:
