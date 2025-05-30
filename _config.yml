@@ -20,7 +20,7 @@ tagline: # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A blog that discusses high dynamic range (HDR) photography.
-  # A minimal, responsive and feature-rich Jekyll theme for technical writing.
+
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
