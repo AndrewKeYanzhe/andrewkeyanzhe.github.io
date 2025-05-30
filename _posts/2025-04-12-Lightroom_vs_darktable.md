@@ -4,7 +4,7 @@ title: Lightroom vs darktable HDR color accuracy
 # author: Andrew Ke
 date: 2025-04-12 10:00:00 +0000
 # categories: [Blogging, Demo]
-# tags: [typography]
+tags: [HDR, Lightroom, darktable]
 # pin: true
 math: true
 # mermaid: true
