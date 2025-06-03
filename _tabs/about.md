@@ -8,7 +8,7 @@ order: 4
 {: .prompt-tip } -->
 
 
-Hi, I am student at the University of Cambridge studying the Masters in Engineering course.
+Hi, I am a student at the University of Cambridge studying the Masters in Engineering course.
 
 I am interested in HDR technology and am experienced with HDR workflows, including 
 - Log to HDR video creation in DaVinci Resolve
