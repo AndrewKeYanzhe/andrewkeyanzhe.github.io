@@ -18,7 +18,7 @@ HDR images best viewed on an HDR capable device + browser. Recommended setup: Ma
 
 This post is a work in progress
 
-An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lumix S5II was used to take a photo of the screen. The raw files were then converted into HDR AVIF by Lightroom 14.2 (Camera Raw 17.2) and darktable 5.0.1. 
+An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lumix S5II was used to take a photo of the screen. The raw files were then converted into HDR AVIF by Lightroom 14.2 (Camera Raw 17.2) and darktable 5.0.1. You can download the raw file [here](https://drive.google.com/drive/u/0/folders/1YIhkxHvp77HHTaanyFJ5LXX28jH74Rau).
 
 Zebra indicators on the S5II and raw overexposure indicators in darktable confirm that no overexposure is present.
 
