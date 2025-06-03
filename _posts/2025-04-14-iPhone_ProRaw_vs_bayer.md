@@ -5,7 +5,7 @@ title: iPhone HEIC vs ProRaw vs bayer raw
 # Daylight savings should use GMT+1
 date: 2025-04-14 18:03:00 +0100
 categories: [Tech Analysis]
-tags: [HDR]
+tags: [HDR, iPhone, iPhone 14 Pro Max, ProRaw]
 pin: true
 math: true
 # mermaid: true
