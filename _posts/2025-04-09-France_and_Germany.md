@@ -4,7 +4,7 @@ title: Visit to Paris and Strasbourg
 # author: Andrew Ke
 date: 2025-04-09 11:33:00 +0000
 categories: [Travel]
-tags: [HDR]
+tags: [HDR, Panasonic Lumix S5ii]
 # pin: true
 math: true
 # mermaid: true
