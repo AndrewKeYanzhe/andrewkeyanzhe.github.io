@@ -24,7 +24,7 @@ An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lu
 Zebra indicators on the S5II and raw overexposure indicators in darktable confirm that no overexposure is present.
 
 
-The image from Lightroom appears desaturated. A discussion has been created on the Adobe forum [https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803](https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803)
+The image from Lightroom appears desaturated. A discussion has been created on the Adobe forum [https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803](https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803). It may very well be possible that I am unware of a setting in Lightroom that avoids the desaturation. If you have any idea, feel free to add to the discussion on the Adobe forum.
 
 
 {: .d-flex .justify-content-center style="margin-bottom: 0rem; "}
