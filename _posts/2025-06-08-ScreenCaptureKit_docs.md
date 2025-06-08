@@ -26,6 +26,7 @@ This post is a work in progress. If you notice any errors or have suggestions, f
 #### Option 2: `captureHDRStreamLocalDisplay`
 - Tonemapping is applied by ScreenCaptureKit.
 - On a MacBook Air with an EDR ratio of 2.0 (200 nits), the recording is tone-mapped to 200 nits.
+  - Within an HDR recording, SDR white (255) appears as 238 (PQ HDR PNG screenshot displayed in Lightroom and checked with digital colour meter)
 
 ---
 
