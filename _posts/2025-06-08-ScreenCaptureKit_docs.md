@@ -19,7 +19,7 @@ This post is a work in progress. If you notice any errors or have suggestions, f
 #### Option 1: `captureHDRStreamCanonicalDisplay`
 - No tonemapping is applied during screen recording.
 - However, if an application performs its own tonemapping, that will appear in the recording. For example:
-  - **Chrome** displays PQ HDR AVIF with tonemapping to the panel's peak brightness (e.g., 200 nits on MacBook Air).
+  - **Chrome** displays PQ HDR AVIF with tonemapping to the panel's HDR peak brightness (e.g., 200 nits on MacBook Air, which has an EDR ratio of 2).
   - **Lightroom** shows PQ HDR AVIF without tonemapping—it applies the PQ EOTF directly but clips at the panel's peak brightness. Screen recordings will show highlight details above panel peak as clipped.
   - I developed a Metal-based app using EDR rendering with tonemapping set to none ([Apple documentation: Perform your own tone mapping](https://developer.apple.com/documentation/metal/performing-your-own-tone-mapping)). Screen recordings from this app preserve full highlight detail.
 
@@ -38,9 +38,8 @@ This post is a work in progress. If you notice any errors or have suggestions, f
     - For an HDR screen recording, SDR white (255) appears as 188 (checked using Digital Color Meter).
 
 - **Chrome**
-  - Displays PQ HDR PNGs with slight tonemapping.
-  - SDR range shows mildly reduced exposure.
-  - For an HDR screen recording, SDR white (255) appears as 221.
+  - Displays PQ HDR PNGs with tonemapping, and the SDR range shows slightly reduced exposure.
+    - Within an HDR recording, SDR white (255) appears as 221.
 
 - **Lightroom**
   - Displays PQ HDR PNGs without any tonemapping.
