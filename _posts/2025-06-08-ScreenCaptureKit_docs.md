@@ -5,6 +5,8 @@ categories: [Tech Analysis]
 tags: [HDR, ScreenCaptureKit, Apple]  
 pin: true  
 math: true  
+toc: false
+
 ---
 
 This post is a work in progress. If you notice any errors or have suggestions, feel free to contact me on LinkedIn.
