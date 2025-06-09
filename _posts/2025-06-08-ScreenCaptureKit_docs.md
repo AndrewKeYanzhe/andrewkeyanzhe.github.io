@@ -2,7 +2,7 @@
 title: Apple ScreenCaptureKit Documentation  
 date: 2025-06-08 22:03:00 +0100  
 categories: [Tech Analysis]  
-tags: [HDR, ScreenCaptureKit, Apple]  
+tags: [HDR, ScreenCaptureKit, macOS, Apple]  
 pin: true  
 math: true  
 toc: false
