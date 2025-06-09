@@ -37,9 +37,9 @@ This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. 
 
 ### Application behaviour when displaying HDR screenshots (M1 MacBook Air)
 
-- **Preview.app**
-  - Does not utilize EDR when displaying HDR images.
-  - Verified via macOS Console logs: `Display 1 setting display headroom hint to 1` (should be 2 for HDR content).
+- **Preview.app (macos Sequoia)**
+  - Does not utilize EDR on the M1 Macbook Air when displaying HDR images.
+    - Verified via macOS Console logs: `Display 1 setting display headroom hint to 1` (should be 2 for HDR content).
   - Displays PQ HDR PNGs with noticeably reduced exposure in the SDR range.
     - For an HDR screenshot, SDR white (255) appears as 188 (checked using Digital Color Meter).
 
