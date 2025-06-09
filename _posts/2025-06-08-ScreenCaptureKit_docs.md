@@ -9,7 +9,7 @@ toc: false
 
 ---
 
-This post is a work in progress. If you notice any errors or have suggestions, feel free to contact me on LinkedIn.
+This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. If you notice any errors or have suggestions, feel free to contact me on LinkedIn.
 
 ---
 
