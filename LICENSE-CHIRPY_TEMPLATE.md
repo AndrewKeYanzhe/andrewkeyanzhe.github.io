@@ -1,3 +1,5 @@
+The MIT license only applies to the Chirpy template. The "Software" mentioned in this license file refers to the Chirpy template.
+
 MIT License
 
 Copyright (c) 2021 Cotes Chung
