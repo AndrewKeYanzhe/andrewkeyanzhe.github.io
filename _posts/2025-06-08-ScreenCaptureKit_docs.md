@@ -9,7 +9,7 @@ toc: false
 
 ---
 
-This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. If you notice any errors or have suggestions, please [open an issue](https://github.com/AndrewKeYanzhe/andrewkeyanzhe.github.io/issues) on this website’s GitHub repository.
+This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. If you notice any errors or have suggestions, feel free to [open an issue](https://github.com/AndrewKeYanzhe/andrewkeyanzhe.github.io/issues) on this website’s GitHub repository.
 
 **TL;DR**
 - Use `captureHDRStreamCanonicalDisplay` for recordings without tonemapping.
