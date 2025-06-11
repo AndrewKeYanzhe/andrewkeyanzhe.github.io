@@ -9,6 +9,8 @@ toc: false
 
 ---
 
+This post is a work in progress
+
 This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. If you notice any errors or have suggestions, feel free to [open an issue](https://github.com/AndrewKeYanzhe/andrewkeyanzhe.github.io/issues) on this website’s GitHub repository.
 
 **TL;DR**
