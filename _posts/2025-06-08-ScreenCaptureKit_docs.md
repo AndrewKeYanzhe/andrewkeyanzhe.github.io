@@ -6,7 +6,7 @@ tags: [HDR, ScreenCaptureKit, macOS, Apple]
 pin: true  
 math: true  
 toc: false
-
+published: false
 ---
 
 This post is a work in progress
