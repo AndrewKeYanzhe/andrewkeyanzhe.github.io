@@ -6,7 +6,7 @@ title: iPhone HEIC vs ProRaw vs bayer raw
 date: 2025-04-14 18:03:00 +0100
 categories: [Tech Analysis]
 tags: [HDR, iPhone, iPhone 14 Pro Max, ProRaw]
-pin: true
+pin: false
 math: true
 # mermaid: true
 
