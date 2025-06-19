@@ -87,3 +87,7 @@ tldr: just use sck with canonical tonemap. and then for the video, scale exposur
 
 
 with exposures matched, The wave form of the two images look very similar and HDR local doesn't seem to introduce additional clipping or highlight rolloff
+
+
+
+note: with mbp reference mode, **quicktime** seems to show 100 nits pq as always 100 nits. so, if sdr is set to 203, pq displayed values are not scaled together
