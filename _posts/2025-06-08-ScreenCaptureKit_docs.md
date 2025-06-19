@@ -64,8 +64,18 @@ use mac split screen. left is my app. right is white image (useful for checking 
 then playback screen recording on macbook pro 16 reference mode To avoid tone mapping during playback.
 Can also use davinci resolve to doublecheck. since canonical is 2.03x the brightness, we can match exposures in davinci and compare
 
-so. verified using davinci: canonical records at sdr = 203 nits
-sck local does not apply more tonemapping, but the exposure is kind of weird. sck -0.43ev is an exact match for canonical -1.02 ev (203 to 100 nit). not sure where 0.43 comes from
+**so. verified using davinci: canonical records at sdr = 203 nits**
+**sck local records at sdr = sdr nits of the physical display**
+e.g. if macbook is set as sdr equal to 300 nits, then the recording will contain sdr = 300 nits. This is verified using Apple console `commit brightness sdr`, and davinci resolve to check the screenshots
+
+Recommendations
+ - Record death stranding video: setting mac physical display sdr = 203 nits looks good. 
+    - so, can use either local display or canonical
+ - Record desktop video: set mac to 100 nits (either reference mode, or turn off auto brightness). record using sck local display.
+    - however, the screenshot will look dark in chrome, lightroom etc since they interpret encoded 203 nits = EDR 1.0. TODO, maybe boost png screenshot brightness
+
+
+sck local does not apply more tonemapping
 
 exposure matched in davinci using nodes 
 1. forward ootf
