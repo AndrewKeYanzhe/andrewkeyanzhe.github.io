@@ -25,9 +25,12 @@ This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. 
 
 #### Option 1: `captureHDRStreamCanonicalDisplay`
 - No tonemapping is applied by ScreenCaptureKit.
-- However, if an application performs its own tonemapping, that will appear in the recording. For example:
+- However, if an application performs its own tonemapping, that will appear in the recording. 
+
+**Application tonemapping/clipping behaviour when showing HDR content:**
   - **Chrome** displays PQ HDR AVIF with tonemapping to the panel's HDR peak brightness (e.g., 200 nits on MacBook Air, which has an EDR ratio of 2).
-  - **Lightroom** shows PQ HDR AVIF without tonemapping—it applies the PQ EOTF directly but clips at the panel's peak brightness. Screen recordings will show highlight details above panel peak as clipped.
+  - **Lightroom** shows PQ HDR AVIF without tonemapping—it applies the PQ EOTF directly but **clips at the panel's peak brightness**. Screen recordings will show highlight details above panel peak as clipped.
+  - 
   - I developed a Metal-based app using EDR rendering with tonemapping set to none ([Apple documentation: Perform your own tone mapping](https://developer.apple.com/documentation/metal/performing-your-own-tone-mapping)). Screen recordings from this app preserve full highlight detail without clipping.
 
 #### Option 2: `captureHDRStreamLocalDisplay`
@@ -53,3 +56,24 @@ This post explores how Apple’s ScreenCaptureKit handles HDR screen recording. 
   - Displays PQ HDR PNGs without any tonemapping.
   - For an HDR screenshot, SDR white (255) remains 255.
   - Best option for accurate HDR screenshot viewing. This should match the original image displayed by the hardware display
+
+
+Best way to test hdr local vs canonical:
+Record screen recording of my hdr app (which does 0 tonemap or clipping)
+use mac split screen. left is my app. right is white image (useful for checking screenshot exposure in davinci waveform)
+then playback screen recording on macbook pro 16 reference mode To avoid tone mapping during playback.
+Can also use davinci resolve to doublecheck. since canonical is 2.03x the brightness, we can match exposures in davinci and compare
+
+so. verified using davinci: canonical records at sdr = 203 nits
+sck local does not apply more tonemapping, but the exposure is kind of weird. sck -0.43ev is an exact match for canonical -1.02 ev (203 to 100 nit). not sure where 0.43 comes from
+
+exposure matched in davinci using nodes 
+1. forward ootf
+2. exposure
+3. inverse ootf
+
+tldr: just use sck with canonical tonemap. and then for the video, scale exposure by 1/2.03
+
+
+
+with exposures matched, The wave form of the two images look very similar and HDR local doesn't seem to introduce additional clipping or highlight rolloff
