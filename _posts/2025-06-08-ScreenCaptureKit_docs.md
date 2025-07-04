@@ -91,3 +91,8 @@ with exposures matched, The wave form of the two images look very similar and HD
 
 
 note: with mbp reference mode, **quicktime** seems to show 100 nits pq as always 100 nits. so, if sdr is set to 203, pq displayed values are not scaled together
+
+
+# macOS 26 beta
+
+Records HEIC HDR screenshots in 10 bit 4:4:4 in P3 PQ colourspace
