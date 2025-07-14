@@ -24,15 +24,27 @@ Zebra indicators on the S5II and raw overexposure indicators in darktable confir
 
 The image from Lightroom appears desaturated. A discussion has been created on the Adobe forum [https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803](https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803). It may very well be possible that I am unware of a setting in Lightroom that avoids the desaturation. If you have any ideas, feel free to add to the discussion on the Adobe forum.
 
+<div style="text-align: center;">
+  <h4>RAW image shot on the S5ii and converted to HDR AVIF</h4>
+</div>
+<!-- #### RAW image shot on the S5ii and converted to HDR AVIF -->
 
 {: .d-flex .justify-content-center style="margin-bottom: 0rem; "}
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web.avif){: .normal .mw-50 .me-2}
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal .mw-50}
 
+
 <div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
   <div style="width: 50%; text-align: center; font-size:80%;">Lightroom (Adobe Neutral)</div>
   <div style="width: 50%; text-align: center; font-size:80%;">Darktable</div>
 </div>
+
+
+<div style="text-align: center;">
+  <h4>Screenshot of the HDR content (displayed on Macbook Pro 16)</h4>
+</div>
+<!-- #### Screenshot of the HDR content (displayed on Macbook Pro 16) -->
+
 
 <!-- ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="50%" .justify-content-center} -->
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: .w-50}
