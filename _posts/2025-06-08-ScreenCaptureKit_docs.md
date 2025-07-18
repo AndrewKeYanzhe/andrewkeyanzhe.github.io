@@ -64,8 +64,9 @@ use mac split screen. left is my app. right is white image (useful for checking 
 then playback screen recording on macbook pro 16 reference mode To avoid tone mapping during playback.
 Can also use davinci resolve to doublecheck. since canonical is 2.03x the brightness, we can match exposures in davinci and compare
 
-**so. verified using davinci: canonical records at sdr = 203 nits**
-**sck local records at sdr = sdr nits of the physical display**
+**so. verified using davinci:** 
+- `canonical records at sdr = 203 nits`
+- `sck local records at sdr = sdr nits of the physical display`
 e.g. if macbook is set as sdr equal to 300 nits, then the recording will contain sdr = 300 nits. This is verified using Apple console `commit brightness sdr`, and davinci resolve to check the screenshots
 
 Recommendations
