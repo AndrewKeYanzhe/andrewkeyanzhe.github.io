@@ -99,7 +99,7 @@ _Original image. Credit: [Colored Smoke Grenades](https://youtu.be/0FYjApop7Mk?s
 
 
 
-The HDR image produced by Photomator does not suffer from desaturation of the orange areas. However, shadow details on the jeans is crushed. For comparison, darktable shows accurate shadow details on the jeans.
+The HDR image produced by Photomator does not suffer from desaturation of the orange areas. However, shadow details on the jeans is crushed, and the blue color of the jeans appears oversaturated. For comparison, darktable shows accurate shadow details on the jeans.
 
 
 
