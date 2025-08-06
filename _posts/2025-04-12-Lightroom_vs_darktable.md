@@ -1,10 +1,10 @@
 ---
-title: Lightroom vs darktable RAW to HDR development color accuracy
+title: RAW to HDR color accuracy - Lightroom, darktable, Photomator
 # description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 # author: Andrew Ke
 date: 2025-04-12 10:00:00 +0000
 categories: [Tech Analysis]
-tags: [HDR, Lightroom, darktable, Panasonic Lumix S5ii]
+tags: [HDR, Lightroom, darktable, Photomator, tone mapping, Panasonic Lumix S5ii]
 # pin: true
 math: true
 # mermaid: true
@@ -34,7 +34,7 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal .mw-50}
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal .mw-50}
 
-
+<!-- captions -->
 <div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
   <div style="width: 50%; text-align: center; font-size:80%;">Lightroom (Adobe Color)</div>
   <div style="width: 50%; text-align: center; font-size:80%;">Darktable</div>
@@ -50,7 +50,7 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 <!-- ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="50%" .justify-content-center} -->
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: .w-50}
 _Original image. Credit: [Colored Smoke Grenades](https://youtu.be/0FYjApop7Mk?si=S-cXCX-0hyAvsTpp&t=23) by Jacob + Katie Schwarz_
-<!-- _Image Caption_ -->
+
 
 
 The following settings are used for Lightroom in addition to the default settings
@@ -69,3 +69,67 @@ I have also tried the Adobe Neutral color profile and the orange color is simila
 
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_neutral.avif){: .w-50}
 _Lightroom with Adobe Neutral profile_
+
+
+
+
+## Photomator vs reference image
+
+The same photo was also developed in Photomator 3.4.11 (20250428.1454) using:
+- HDR mode: on
+- exposure: 400% (note that Photomator's exposure limit is 400%)
+
+
+<div style="text-align: center;">
+  <h4>Rendered by Photomator:</h4>
+</div>
+
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_photomator.avif){: .w-50}
+<!-- _Rendered by Photomator_ -->
+
+
+
+<div style="text-align: center;">
+  <h4>Screenshot of the HDR content (displayed on Macbook Pro 16):</h4>
+</div>
+
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: .w-50}
+_Original image. Credit: [Colored Smoke Grenades](https://youtu.be/0FYjApop7Mk?si=S-cXCX-0hyAvsTpp&t=23) by Jacob + Katie Schwarz_
+
+
+
+
+The HDR image produced by Photomator does not suffer from desaturation of the orange areas. However, shadow details on the jeans is crushed. For comparison, darktable shows accurate shadow details on the jeans.
+
+
+
+
+<!-- <div style="text-align: center;">
+  <h4>Photomator vs reference image</h4>
+</div> -->
+
+{% comment %}
+
+
+<div class="d-flex justify-content-center" style="gap: 1rem; align-items: flex-start; margin-bottom: 0;">
+  <img src="assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif" alt="Lightroom" style="max-width: 50%; height: auto;">
+  <img src="assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif" alt="Original" style="max-width: 50%; height: auto;">
+</div>
+
+
+
+
+
+<!-- captions -->
+<div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
+  <div style="width: 50%; text-align: center; font-size:80%;">Lightroom (Adobe Color)</div>
+    <div style="width: 50%; text-align: center; font-size:80%;">
+      Original image (
+      <a href="https://youtu.be/0FYjApop7Mk?si=S-cXCX-0hyAvsTpp&t=23" target="_blank">
+        Colored Smoke Grenades
+      </a>
+      )
+    </div>
+</div>
+
+{% endcomment %}
