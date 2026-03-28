@@ -9,7 +9,7 @@ toc: false
 published: true
 ---
 
-Davinci Resolve 20.3.1 for Windows shows HDR content that is 20% too dark. As a result, there is a mismatch in luminance between the HDR viewer in Resolve, and the exported video (which has the correct luminance).
+Davinci Resolve 20.3.1 for Windows shows HDR content with luminance values 20% darker than reference. So, a 100 nit HDR pattern will be displayed at 80 nits in Resolve's viewer. As a result, there is a mismatch in luminance between the HDR viewer in Resolve, and the exported video (which has the correct luminance).
 
 I suspect it is because Davinci Resolve scales PQ HDR values using 100 nits = 1.0, while [Windows DWM displays 1.0 as 80 nits in HDR](https://learn.microsoft.com/en-us/windows/win32/direct3darticles/high-dynamic-range#system-composition-using-a-high-bit-depth-canonical-color-space-1).
 
@@ -19,10 +19,13 @@ The 100 nit test pattern was played side by side in MPV video player and Davinci
 
 ![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/mpv_resolve_side_by_side.jpg)
 
-OBS was then used to record the screen in HDR (PQ BT2020), and the screen recording was imported back into Davinci Resolve. The screen recording was zoomed in so we can see the luminance of the white pattern using the scopes.
+OBS was then used to record the screen in HDR (PQ BT2020), and the screen recording was imported back into Davinci Resolve. The screen recording was zoomed in so we can see the luminance of the white pattern using the scopes. The timeline colorspace is PQ BT2020.
 
 ![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/video_zoomed.png)
 
 In Resolve's ST2084 HDR scopes, we can see that the 100 nit test pattern played in MPV (on the left) renders at 100 nits, while the test pattern in Resolve (on the right) renders at 80 nits.
 
 ![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/scopes, left-mpv at 100 nits, right-resolve at 80 nits.png)
+
+
+Replicated on Windows 11 25H2 with Davinci Resolve 20.3.1, RTX 2080, HDR enabled in Windows settings and Resolve viewer (Use Windows display color management and HDR for viewers).
