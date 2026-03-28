@@ -13,7 +13,7 @@ Davinci Resolve 20.3.1 for Windows shows HDR content with luminance values 20% d
 
 I suspect it is because Davinci Resolve scales PQ HDR values using 100 nits = 1.0, while [Windows DWM displays 1.0 as 80 nits in HDR](https://learn.microsoft.com/en-us/windows/win32/direct3darticles/high-dynamic-range#system-composition-using-a-high-bit-depth-canonical-color-space-1).
 
-> So I believe this issue can be fixed by scaling pixel values by 1.25 in a linear colorspace before passing to Windows DWM.
+> So I believe Blackmagic Design can fix this issue by scaling pixel values by 1.25 in a linear colorspace before passing to Windows DWM.
 {: .prompt-tip }
 
 Resolve's darker than reference HDR luminance was verified by generating a 100 nit PQ BT2020 test pattern in Davinci Resolve, using Color Space Transform: clip at 100 nits. The exported test pattern is available [here](https://drive.google.com/drive/u/0/folders/1iqx9VpY8ciYglu35SklKOdoVovZW_P2V).
