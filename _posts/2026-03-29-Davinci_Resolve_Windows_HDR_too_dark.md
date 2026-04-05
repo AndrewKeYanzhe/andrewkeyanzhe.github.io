@@ -1,5 +1,5 @@
 ---
-title: Davinci Resolve for Windows shows HDR content 20% too dark
+title: Davinci Resolve for Windows shows HDR content 20% darker than reference
 date: 2026-03-29 01:30:00 +0800  
 categories: [Tech Analysis]  
 tags: [DaVinci Resolve, HDR]  
