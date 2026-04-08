@@ -10,7 +10,7 @@ toc: false
 published: true
 
 image:
-  path: assets\2025-06-16-Starship_flight_5\R5_L3064_web_0.2.avif
+  path: assets/2025-06-16-Starship_flight_5/R5_L3064_web_0.2.avif
 ---
 
 <style>

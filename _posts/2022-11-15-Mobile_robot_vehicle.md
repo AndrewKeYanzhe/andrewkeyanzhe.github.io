@@ -12,7 +12,7 @@ math: true
 # media_subpath: posts/2019-08-08-text-and-typography/
 # media_subpath: 
 image:
-  path: assets\2022-11-15-Mobile_robot_vehicle\IMG_7546_web_0.5.avif
+  path: assets/2022-11-15-Mobile_robot_vehicle/IMG_7546_web_0.5.avif
 ---
 
 As part of the second year Engineering course, we designed and built a mobile robot vehicle that will pick up a magnetic cube and place it in different locations depending on whether the cube is magnetic.
