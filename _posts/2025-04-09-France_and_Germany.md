@@ -12,6 +12,9 @@ math: true
 # media_subpath: posts/2019-08-08-text-and-typography/
 # media_subpath: 
 
+image:
+  path: assets/2025-04-09-France_and_Germany/P1125381_web.avif
+
 ---
 
 HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with XDR display + Google Chrome.

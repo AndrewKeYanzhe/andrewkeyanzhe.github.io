@@ -35,6 +35,8 @@ Run the server
 bundle exec jekyll serve
 ```
 
+Chripy theme layouts can be overriden by creating `_layouts/posts.html` for example. Here, we removed the preview image at the top of the page. Hence, the preview image is only used on the home page as thumbnails for the list of articles. 
+
 ## Contributing
 
 This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.

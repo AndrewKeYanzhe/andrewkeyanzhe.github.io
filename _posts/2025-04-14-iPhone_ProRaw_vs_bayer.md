@@ -12,7 +12,8 @@ math: true
 
 # media_subpath: posts/2019-08-08-text-and-typography/
 # media_subpath: 
-
+image:
+  path: assets\2025-04-14-iPhone_ProRaw_vs_bayer\side_by_side_thumbnail.avif
 ---
 
 <!-- https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md -->

@@ -11,7 +11,8 @@ math: true
 
 # media_subpath: posts/2019-08-08-text-and-typography/
 # media_subpath: 
-
+image:
+  path: assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif
 ---
 
 

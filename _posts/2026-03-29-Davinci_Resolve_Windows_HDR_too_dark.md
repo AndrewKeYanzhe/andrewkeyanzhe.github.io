@@ -7,6 +7,8 @@ pin: false
 math: true  
 toc: false
 published: true
+image:
+  path: assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/mpv_resolve_side_by_side.jpg
 ---
 
 Davinci Resolve 20.3.1 for Windows shows HDR content with luminance values 20% darker than reference. So, a 100 nit HDR pattern will be displayed at 80 nits in Resolve's viewer. As a result, there is a mismatch in luminance between the HDR viewer in Resolve, and the exported video (which has the correct luminance).

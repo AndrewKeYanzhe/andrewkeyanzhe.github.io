@@ -8,7 +8,17 @@ pin: true
 math: true  
 toc: false
 published: true
+
+image:
+  path: assets\2025-06-16-Starship_flight_5\R5_L3064_web_0.2.avif
 ---
+
+<style>
+  #post-wrapper .preview-img {
+    display: none;
+  }
+</style>
+
 
 **On October 13, 2024, SpaceX's Starship Flight Test 5 delivered the Starship upper stage into a suborbital trajectory, and the Super Heavy booster was caught by the chopstick arms on the launch tower, Mechazilla.**
 
