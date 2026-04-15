@@ -34,8 +34,8 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 
 {: .d-flex .justify-content-center style="margin-bottom: 0rem; "}
 <!-- ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal .mw-50 .me-2} -->
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal .mw-50}
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal .mw-50}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal width="350"}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal width="350"}
 
 <!-- captions -->
 <div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
@@ -51,7 +51,7 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 
 
 <!-- ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="50%" .justify-content-center} -->
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: .w-50}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="400"}
 _Original image. Credit: [Colored Smoke Grenades](https://youtu.be/0FYjApop7Mk?si=S-cXCX-0hyAvsTpp&t=23) by Jacob + Katie Schwarz_
 
 
@@ -70,7 +70,7 @@ Lightroom mobile v. 10.3.1 71F6C8/202 running on the iPhone 14 Pro Max exhibits 
 
 I have also tried the Adobe Neutral color profile and the orange color is similarly desaturated:
 
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_neutral.avif){: .w-50}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_neutral.avif){: width="400"}
 _Lightroom with Adobe Neutral profile_
 
 
@@ -87,7 +87,7 @@ The same photo was also developed in Photomator 3.4.11 (20250428.1454) using:
   <h4>Rendered by Photomator:</h4>
 </div>
 
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_photomator.avif){: .w-50}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_photomator.avif){: width="400"}
 <!-- _Rendered by Photomator_ -->
 
 
@@ -96,7 +96,7 @@ The same photo was also developed in Photomator 3.4.11 (20250428.1454) using:
   <h4>Screenshot of the HDR content (displayed on Macbook Pro 16):</h4>
 </div>
 
-![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: .w-50}
+![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="400"}
 _Original image. Credit: [Colored Smoke Grenades](https://youtu.be/0FYjApop7Mk?si=S-cXCX-0hyAvsTpp&t=23) by Jacob + Katie Schwarz_
 
 

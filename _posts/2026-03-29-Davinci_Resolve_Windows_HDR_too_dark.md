@@ -31,7 +31,7 @@ OBS was then used to record the screen in HDR (PQ BT2020), and the screen record
 In Resolve's ST2084 HDR scopes, we can see that the 100 nit test pattern played in MPV (on the left) renders at 100 nits, while the test pattern in Resolve (on the right) renders at 80 nits.
 
 ![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/scopes, left-mpv at 100 nits, right-resolve at 80 nits.png)
-![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/scopes, left-mpv at 100 nits, right-resolve at 80 nits cropped.png){: : width="400"}
+![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/scopes, left-mpv at 100 nits, right-resolve at 80 nits cropped.png){: width="400"}
 
 The test was repeated with a 1000 nit test image, and Resolve displays this at 800 nits.
 
