@@ -54,7 +54,7 @@ In this HDR screenshot, Chrome SDR white is at 100 nits, while Resolve shows an 
 
 These are the SDR project settings that I used.
 
-![img-description](assets\2026-03-29-Davinci_Resolve_Windows_HDR_too_dark\SDR project settings.png)
+![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/SDR project settings.png)
 
 The reason for this behaviour is that when `Use Windows display color management and HDR for viewers` is enabled, the viewer uses a HDR surface (presumably scRGB). Windows does not scale HDR surface exposure based on the `Windows SDR content brightness` setting, so apps like Chrome handle scaling of HDR surface exposure by itself.
 
