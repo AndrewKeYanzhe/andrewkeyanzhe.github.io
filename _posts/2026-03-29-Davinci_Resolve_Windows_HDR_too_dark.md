@@ -36,3 +36,27 @@ In Resolve's ST2084 HDR scopes, we can see that the 100 nit test pattern played 
 The test was repeated with a 1000 nit test image, and Resolve displays this at 800 nits.
 
 Replicated on Windows 11 25H2 with Davinci Resolve 20.3.1, RTX 2080, HDR enabled in Windows settings and Resolve viewer (Use Windows display color management and HDR for viewers).
+
+## Update: Resolve also shows SDR projects at a fixed 80 nits, instead of Windows SDR brightness (e.g. 100 nits) when 'Use Windows display color management and HDR for viewers' is enabled 
+
+In this HDR screenshot, Chrome SDR white is at 100 nits, while Resolve shows an SDR white pattern at 80 nits.
+`Use Windows display color management and HDR for viewers` is enabled
+
+![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/Resolve use CMM vs Chrome 100 nits.png)
+
+In this HDR screenshot, Chrome SDR white is at 100 nits, while Resolve shows an SDR white pattern at 100 nits.
+`Use Windows display color management and HDR for viewers` is disabled
+
+![img-description](assets/2026-03-29-Davinci_Resolve_Windows_HDR_too_dark/Resolve don't use CMM vs Chrome 100 nits.png)
+
+> So, you need to disable `Use Windows display color management and HDR for viewers` if you want Resolve's viewer to match the brightness of other SDR video players. To get Resolve's viewer to show 100 nits SDR white, you need to set the `Windows SDR content brightness` setting to 5% so that Windows shows SDR content at 100 nits.
+{: .prompt-tip }
+
+These are the SDR project settings that I used.
+
+![img-description](assets\2026-03-29-Davinci_Resolve_Windows_HDR_too_dark\SDR project settings.png)
+
+The reason for this behaviour is that when `Use Windows display color management and HDR for viewers` is enabled, the viewer uses a HDR surface (presumably scRGB). Windows does not scale HDR surface exposure based on the `Windows SDR content brightness` setting, so apps like Chrome handle scaling of HDR surface exposure by itself.
+
+> To solve this issue, I recommend Blackmagic Design to scale the viewer's HDR surface exposure based on the `Windows SDR content brightness` setting when output colorspace is set to gamma or sRGB.
+{: .prompt-tip }
