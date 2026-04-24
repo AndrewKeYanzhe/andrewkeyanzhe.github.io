@@ -39,7 +39,7 @@ Replicated on Windows 11 25H2 with Davinci Resolve 20.3.1, RTX 2080, HDR enabled
 
 ## Update: Resolve also shows SDR projects at a fixed 80 nits, instead of Windows SDR brightness (e.g. 100 nits) when 'Use Windows display color management and HDR for viewers' is enabled 
 
-SDR projects refer to Resolve projects where the output colorspace is gamma or sRGB.
+SDR projects refer to Resolve projects where the output colorspace uses Gamma or sRGB transfer functions.
 
 In this HDR screenshot, Chrome SDR white is at 100 nits, while Resolve shows an SDR white pattern at 80 nits.
 `Use Windows display color management and HDR for viewers` is enabled
@@ -60,5 +60,5 @@ These are the SDR project settings that I used.
 
 The reason for this behaviour is that when `Use Windows display color management and HDR for viewers` is enabled, the viewer uses a HDR surface (presumably scRGB). Windows does not scale HDR surface exposure based on the `Windows SDR content brightness` setting, so apps like Chrome handle scaling of HDR surface exposure by itself.
 
-> To solve this issue, I recommend Blackmagic Design to scale the viewer's HDR surface exposure based on the `Windows SDR content brightness` setting when output colorspace is set to gamma or sRGB.
+> To solve this issue, I recommend Blackmagic Design to scale the viewer's HDR surface exposure based on the `Windows SDR content brightness` setting when output colorspace is set to Gamma or sRGB.
 {: .prompt-tip }
