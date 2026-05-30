@@ -2,7 +2,7 @@
 title: YouTube 4K VP9 HDR vs 8K AV1 HDR encode quality
 date: 2026-05-30 12:00:00 +0800  
 categories: [Tech Analysis]  
-tags: [YouTube, VP9, AV1, HDR]  
+tags: [YouTube, VP9, AV1, HDR, Video compression]  
 pin: false  
 math: true  
 toc: false
