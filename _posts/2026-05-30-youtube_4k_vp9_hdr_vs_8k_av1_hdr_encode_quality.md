@@ -33,6 +33,8 @@ We will compare it with the original 4K 30 fps HEVC export from DaVinci Resolve 
 
 HDR screenshots best viewed on a HDR capable device (Windows 11 + HDR ON + Chrome, Macbook Pro with XDR display, iPhone on iOS 26, newer Android phones with mixed HDR SDR composition E.g. Samsung Galaxy S25 or newer)
 
+We will compare an identical frame at the 2:04 timestamp from all three videos. 
+
 #### **100% crops (Face)**
 
 The 8K AV1 HDR encode shows less compression artifacts compared to the 4K VP9 HDR encode, though it still resolves significantly less detail than the original 4K HEVC export.
