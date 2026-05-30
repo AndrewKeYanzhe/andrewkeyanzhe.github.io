@@ -31,7 +31,7 @@ YouTube has encoded the video [Fire performance at Homerton College, HDR](https:
 
 We will compare it with the original 4K 30 fps HEVC export from DaVinci Resolve which is 233 Mbps.
 
-HDR screenshots best viewed on a HDR capable device (Windows 11 + HDR ON + Chrome, Macbook Pro with XDR display, iPhone on iOS 26, newer Android phones with mixed HDR SDR composition E.g. Samsung Galaxy S25 or newer)
+HDR screenshots best viewed on a HDR capable computer (Windows 11 + HDR ON + Chrome, Macbook Pro with XDR display + Chrome)
 
 We will compare an identical frame at the 2:04 timestamp from all three videos. 
 
