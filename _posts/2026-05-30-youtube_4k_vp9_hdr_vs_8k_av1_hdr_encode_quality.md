@@ -31,6 +31,8 @@ YouTube has encoded the video [Fire performance at Homerton College, HDR](https:
 
 We will compare it with the original 4K 30 fps HEVC export from DaVinci Resolve which is 233 Mbps.
 
+The 8K YouTube encode was created by having DaVinci Resolve render the timeline at 4K and encode at 8K, before uploading to YouTube.
+
 HDR screenshots best viewed on a HDR capable computer (Windows 11 + HDR ON + Chrome, Macbook Pro with XDR display + Chrome)
 
 We will compare an identical frame at the 2:04 timestamp from all three videos. 
