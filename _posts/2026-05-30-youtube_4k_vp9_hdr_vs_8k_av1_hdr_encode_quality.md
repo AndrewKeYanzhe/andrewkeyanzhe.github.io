@@ -114,3 +114,15 @@ The 4K VP9 HDR encode shows more compression artefacts.
 
 #### **3. 4K HEVC export from DaVinci Resolve (233 Mbps)**
 ![MPV](assets/2026-05-30-youtube_4k_vp9_hdr_vs_8k_av1_hdr_encode_quality/Screenshot%202026-05-30%2012-00-26%20MPV.png)
+
+
+
+**Bitrate comparison with other platforms**
+
+For a 30 FPS video:
+
+| Platform | Resolution | Codec | Bitrate | Notes |
+|----------|------------|-------|---------|-------|
+| YouTube | 4K | VP9 HDR | 22.6 Mbps | |
+| YouTube | 8K | AV1 HDR | 39.7 Mbps | |
+| Bilibili | 4K | HEVC HDR | 7.8 Mbps | |
