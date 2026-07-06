@@ -126,3 +126,5 @@ For a 30 FPS video:
 | YouTube | 4K | VP9 HDR | 22.6 Mbps | |
 | YouTube | 8K | AV1 HDR | 39.7 Mbps | |
 | Bilibili | 4K | HEVC HDR | 7.8 Mbps | |
+
+Note: As of July 2026, Bilibili supports 4K HDR and 8K SDR, but not 8K HDR.
