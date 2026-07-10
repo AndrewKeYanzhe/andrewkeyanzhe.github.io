@@ -41,8 +41,8 @@ A discussion has been created on the Adobe forum [https://community.adobe.com/t5
 
 <!-- captions -->
 <div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
-  <div style="width: 50%; text-align: center; font-size:80%;">Lightroom (Adobe Color)</div>
-  <div style="width: 50%; text-align: center; font-size:80%;">darktable</div>
+  <div style="width: 46%; text-align: center; font-size:80%;">Lightroom (Adobe Color)</div>
+  <div style="width: 46%; text-align: center; font-size:80%;">darktable</div>
 </div>
 
 
