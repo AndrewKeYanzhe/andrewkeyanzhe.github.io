@@ -25,7 +25,9 @@ image:
 Zebra indicators on the S5II and raw overexposure indicators in darktable confirm that no overexposure is present.
 
 
-The image from Lightroom appears desaturated. A discussion has been created on the Adobe forum [https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803](https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803). It may very well be possible that I am unware of a setting in Lightroom that avoids the desaturation. If you have any ideas, feel free to add to the discussion on the Adobe forum.
+**The image from Lightroom appears desaturated.**
+
+A discussion has been created on the Adobe forum [https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803](https://community.adobe.com/t5/lightroom-classic-discussions/wide-gamut-hdr-colours-are-desaturated/m-p/15352803). It may very well be possible that I am unware of a setting in Lightroom that avoids the desaturation. If you have any ideas, feel free to add to the discussion on the Adobe forum.
 
 <div style="text-align: center;">
   <h4>RAW image shot on the S5ii and converted to HDR AVIF</h4>
