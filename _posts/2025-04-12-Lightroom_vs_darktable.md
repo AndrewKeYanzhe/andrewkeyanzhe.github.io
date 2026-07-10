@@ -5,7 +5,7 @@ title: RAW to HDR color accuracy - Lightroom, darktable, Photomator
 date: 2025-04-12 10:00:00 +0000
 categories: [Tech Analysis]
 tags: [HDR, Lightroom, darktable, Photomator, tone mapping, Panasonic Lumix S5ii]
-# pin: true
+pin: true
 math: true
 # mermaid: true
 
