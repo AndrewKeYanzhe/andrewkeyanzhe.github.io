@@ -45,9 +45,9 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 
 
 <div style="text-align: center;">
-  <h4>Screenshot of the HDR content (displayed on Macbook Pro 16)</h4>
+  <h4>HDR screenshot of the video (ground truth)</h4>
 </div>
-<!-- #### Screenshot of the HDR content (displayed on Macbook Pro 16) -->
+<!-- #### Screenshot of the HDR content-->
 
 
 <!-- ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="50%" .justify-content-center} -->
