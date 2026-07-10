@@ -19,7 +19,7 @@ image:
 > HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with XDR display + Google Chrome.
 {: .prompt-info }
 
-An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lumix S5II was used to take a photo of the screen. The raw files were then converted into HDR AVIF by Lightroom 14.2 (Camera Raw 17.2) and darktable 5.0.1. You can download the raw file [here](https://drive.google.com/drive/u/0/folders/1YIhkxHvp77HHTaanyFJ5LXX28jH74Rau). The settings used to develop the photos will be given at the end of this post.
+**An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lumix S5II was used to take a photo of the screen.** The raw files were then converted into HDR AVIF by Lightroom 14.2 (Camera Raw 17.2) and darktable 5.0.1. You can download the raw file [here](https://drive.google.com/drive/u/0/folders/1YIhkxHvp77HHTaanyFJ5LXX28jH74Rau). The settings used to develop the photos will be given at the end of this post.
 
 
 Zebra indicators on the S5II and raw overexposure indicators in darktable confirm that no overexposure is present.
@@ -40,7 +40,7 @@ The image from Lightroom appears desaturated. A discussion has been created on t
 <!-- captions -->
 <div class="d-flex justify-content-center" style="gap: 0.5rem;" style="margin-bottom: 1rem; color:#6d6c6c;">
   <div style="width: 50%; text-align: center; font-size:80%;">Lightroom (Adobe Color)</div>
-  <div style="width: 50%; text-align: center; font-size:80%;">Darktable</div>
+  <div style="width: 50%; text-align: center; font-size:80%;">darktable</div>
 </div>
 
 
@@ -69,6 +69,11 @@ The following settings are used for darktable in addition to the default setting
 Lightroom mobile v. 10.3.1 71F6C8/202 running on the iPhone 14 Pro Max exhibits a similar behaviour to Lightroom Classic.
 
 I have also tried the Adobe Neutral color profile and the orange color is similarly desaturated:
+
+<div style="text-align: center;">
+  <h4>Lightroom (Adobe Neutral)
+</h4>
+</div>
 
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_neutral.avif){: width="400"}
 _Lightroom with Adobe Neutral profile_
