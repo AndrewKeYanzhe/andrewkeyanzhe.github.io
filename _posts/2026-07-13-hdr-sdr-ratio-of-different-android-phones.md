@@ -1,5 +1,5 @@
 ---
-title: HDR SDR ratio of different Android phones
+title: HDR to SDR ratio of different Android phones
 date: 2026-07-13 23:55:00 +0800
 categories: [Tech Analysis]
 tags: [Android, HDR]
