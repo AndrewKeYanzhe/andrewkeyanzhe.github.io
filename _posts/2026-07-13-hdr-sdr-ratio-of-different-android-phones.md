@@ -21,8 +21,24 @@ image:
 
 On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, and `8.0 for videos`. However, I have not tested every Android configuration and I cannot say for certain if there exists any Android device with a higher HDR to SDR ratio for photos or images.
 
-This section is a work in progress.
+<u>This section is a work in progress.</u>
 
-**The maximum HDR to SDR ratio for the Samsung Galaxy S26+ is <u>5.0 for photos</u>**
+### Google Pixel 7 Pro (Android 16)
+
+**The maximum HDR to SDR ratio is <u>5.0 for HDR photos viewed in Chrome</u>**
+
+This maximum HDR to SDR ratio of 5.0 can be maintained up to around SDR=140 nits (visual estimate).
+
+TODO: insert screenshot
+
+**The maximum HDR to SDR ratio is <u>8.0 for videos</u>**
+
+This maximum HDR to SDR ratio of 8.0 can be maintained up to around SDR=100 nits (visual estimate).
+
+TODO: insert screenshot
+
+### Samsung Galaxy S26+
+
+**The maximum HDR to SDR ratio is <u>5.0 for photos</u>**
 
 ![HDR SDR Ratio Image](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574.avif){: width="300"}
