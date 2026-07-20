@@ -16,7 +16,7 @@ image:
 ---
 
 
-> HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with XDR display + Google Chrome.
+> HDR images best viewed on an HDR capable device + browser. Recommended setup: Macbook Pro 16 with internal XDR display + Google Chrome.
 {: .prompt-info }
 
 **An HDR YouTube video was displayed on the M1 Macbook Pro 16 and the Panasonic Lumix S5II was used to take a photo of the screen.** The raw files were then converted into HDR AVIF by Lightroom 14.2 (Camera Raw 17.2) and darktable 5.0.1. You can download the raw file [here](https://drive.google.com/drive/u/0/folders/1YIhkxHvp77HHTaanyFJ5LXX28jH74Rau). The settings used to develop the photos will be given at the end of this post.
@@ -100,7 +100,7 @@ The same photo was also developed in Photomator 3.4.11 (20250428.1454) using:
 
 
 <div style="text-align: center;">
-  <h4>Screenshot of the HDR content (displayed on Macbook Pro 16):</h4>
+  <h4>HDR screenshot of the video (ground truth)</h4>
 </div>
 
 ![img-description](assets/2025-04-12-Lightroom_vs_darktable/smoke grenades_1.1.1 +1ev.avif){: width="400"}
