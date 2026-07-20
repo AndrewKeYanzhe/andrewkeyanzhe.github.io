@@ -19,7 +19,7 @@ image:
 
 ### Android compositor behavior
 
-On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, and `8.0 for videos`. However, I have not tested every Android configuration and I cannot say for certain if there exists any Android device with a higher HDR to SDR ratio for photos or images.
+On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, and `8.0 for videos`. However, I have not tested every Android configuration and I cannot say for certain if there exists any Android device with a higher HDR to SDR ratio for photos or videos.
 
 <u>This section is a work in progress.</u>
 
@@ -27,7 +27,7 @@ On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, an
 
 **The maximum HDR to SDR ratio is <u>5.0 for HDR photos viewed in Chrome</u>**
 
-This maximum HDR to SDR ratio of 5.0 can be maintained up to around SDR=140 nits (visual estimate).
+This maximum HDR to SDR ratio of 5.0 can be maintained up to around SDR=140 nits (visual estimate). The HDR/SDR ratio overlay can be enabled in `developer options` for devices running Android 15 or newer.
 
 TODO: insert screenshot
 
