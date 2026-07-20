@@ -16,6 +16,13 @@ image:
 
 > iPhone with Super Retina XDR display: Up to 8x SDR
 
-**The maximum HDR to SDR ratio on the Samsung Galaxy S26+ is 5.0**
+
+### Android compositor behavior
+
+On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, and `8.0 for videos`. However, I have not tested every Android configuration and I cannot say for certain if there exists any Android device with a higher HDR to SDR ratio for photos or images.
+
+This section is a work in progress.
+
+**The maximum HDR to SDR ratio for the Samsung Galaxy S26+ is 5.0 for photos**
 
 ![HDR SDR Ratio Image](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574.avif){: width="300"}
