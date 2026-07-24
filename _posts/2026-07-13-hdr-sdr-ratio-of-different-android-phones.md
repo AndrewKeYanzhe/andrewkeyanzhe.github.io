@@ -27,7 +27,11 @@ On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, an
 
 Lightroom on Android seems to enable HDR on certain devices using a whitelist system.
 
-As of July 2026, the list only includes Google and Samsung devices. So, there are many Android devices that do support mixed HDR SDR composition, but are unable to utilise Lightroom's HDR image preview due to the whitelist. See the section on the Honor Magic V3.
+As of July 2026, the list only includes Google and Samsung devices.
+
+
+> So, there are many Android devices that do support mixed HDR SDR composition, but are unable to utilise Lightroom's HDR image preview due to the whitelist system. See the section on the Honor Magic V3.
+{: .prompt-warning }
 
 The full list is here: [https://helpx.adobe.com/ie/lightroom-cc/using/hdr-android.html#hdr-compatible](https://helpx.adobe.com/ie/lightroom-cc/using/hdr-android.html#hdr-compatible)
 
