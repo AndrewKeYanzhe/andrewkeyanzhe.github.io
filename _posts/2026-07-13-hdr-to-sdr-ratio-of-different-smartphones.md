@@ -7,6 +7,9 @@ pin: false
 math: true
 toc: false
 published: true
+redirect_from:
+  - /posts/hdr-sdr-ratio-of-different-android-phones/
+  - /posts/hdr-sdr-ratio-of-different-smartphones/
 image:
   path: assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/IMG_3574_thumbnail.avif
 ---
