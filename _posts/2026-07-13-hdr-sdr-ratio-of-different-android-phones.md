@@ -44,7 +44,9 @@ This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nit
 
 This maximum HDR to SDR ratio of 8.0 can be maintained up to around SDR=100 nits (visual estimate).
 
-![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: width="300"}
+{: .d-flex .justify-content-center style="gap: 2rem; margin-left: -2rem;" }
+![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
+![Pixel 7 Pro YouTube video](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20YouTube%20video.avif){: .normal width="300"}
 
 ### Samsung Galaxy S26+
 
