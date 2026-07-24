@@ -62,7 +62,7 @@ The maximum HDR to SDR ratios are:
 - Photos (viewed in Chrome): 4.92
 - Videos (viewed in YouTube): 7.46
 
-Lightroom says "HDR Unavailable".
+Lightroom says `HDR Unavailable`.
 
 ![Honor Magic V3 Lightroom HDR Unavailable](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Honor%20Magic%20V3%20Lightroom%20HDR%20unavailable.jpg){: width="400"}
 
