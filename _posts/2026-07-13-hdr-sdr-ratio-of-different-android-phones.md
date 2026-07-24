@@ -23,6 +23,15 @@ On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, an
 
 <u>This section is a work in progress.</u>
 
+### Lightroom on Android
+
+Lightroom on Android seems to enable HDR on certain devices using a whitelist system.
+
+As of July 2026, the list only includes Google and Samsung devices. So, there are many Android devices that do support mixed HDR SDR composition, but are unable to utilise Lightroom's HDR image preview due to the whitelist. See the section on the Honor Magic V3.
+
+The full list is here: [https://helpx.adobe.com/ie/lightroom-cc/using/hdr-android.html#hdr-compatible](https://helpx.adobe.com/ie/lightroom-cc/using/hdr-android.html#hdr-compatible)
+
+
 ### Google Pixel 7 Pro (Android 16)
 
 **The maximum HDR to SDR ratio is <u>5.0 for HDR photos viewed in Chrome</u>**
@@ -42,3 +51,15 @@ TODO: insert screenshot
 **The maximum HDR to SDR ratio is <u>5.0 for photos</u>**
 
 ![HDR SDR Ratio Image](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574.avif){: width="300"}
+
+### Honer Magic V3
+
+This is a foldable phone from Honor, utilising the Snapdragon 8 Gen 3. The phone is running Android 16. Tested in July 2026.
+
+The maximum HDR to SDR ratios are:
+- Photos (viewed in Chrome): 4.92
+- Videos (viewed in YouTube): 7.46
+
+Lightroom says "HDR Unavailable".
+
+
