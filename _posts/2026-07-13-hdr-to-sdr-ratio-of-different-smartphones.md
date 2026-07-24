@@ -8,7 +8,7 @@ math: true
 toc: false
 published: true
 image:
-  path: assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574_thumbnail.avif
+  path: assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/IMG_3574_thumbnail.avif
 ---
 <!-- The aspect ratio of the post thumbnails is 40/21 (which is approximately 1.905:1 or 1.9:1). -->
 
@@ -22,7 +22,7 @@ I believe Lightroom supports HDR image preview on all OLED iPhones.
 
 The maximum HDR to SDR ratio for Lightroom on iPhone is `8.0`. In the screenshot, we can see that the histogram shows 3 bars of HDR headroom, so HDR pixels 3 stops above SDR white can be displayed. The 4th bar of HDR headroom in the histogram shows a lighter gray color, so this section exceeds the HDR 8.0 luminance ratio limit. Pixels brighter than 8x SDR will be clipped.
 
-![iPhone 14 Pro Max Lightroom](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/iPhone%2014%20Pro%20Max%20Lightroom.png){: width="300"}
+![iPhone 14 Pro Max Lightroom](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/iPhone%2014%20Pro%20Max%20Lightroom.png){: width="300"}
 
 The screenshot was captured on an iPhone 14 Pro Max.
 
@@ -59,8 +59,8 @@ This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nit
 This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nits (visual estimate).
 
 {: .d-flex .justify-content-center style="gap: 2rem; margin-left: 0rem;" }
-![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
-![Pixel 7 Pro YouTube video](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20YouTube%20video.avif){: .normal width="300"}
+![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
+![Pixel 7 Pro YouTube video](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/Pixel%207%20Pro%20YouTube%20video.avif){: .normal width="300"}
 
 > This article contains HDR photos which are best viewed on an HDR-capable device and browser. Recommended setups:
 - Windows 11 + HDR ON + Chrome
@@ -73,7 +73,7 @@ This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nit
 
 **The maximum HDR to SDR ratio is <u>5.0 for photos</u>**
 
-![HDR SDR Ratio Image](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574.avif){: width="300"}
+![HDR SDR Ratio Image](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/IMG_3574.avif){: width="300"}
 
 ### Honor Magic V3
 
@@ -85,7 +85,7 @@ The maximum HDR to SDR ratios are:
 
 Lightroom says `HDR Unavailable`.
 
-![Honor Magic V3 Lightroom HDR Unavailable](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Honor%20Magic%20V3%20Lightroom%20HDR%20unavailable.jpg){: width="400"}
+![Honor Magic V3 Lightroom HDR Unavailable](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/Honor%20Magic%20V3%20Lightroom%20HDR%20unavailable.jpg){: width="400"}
 
 
 
