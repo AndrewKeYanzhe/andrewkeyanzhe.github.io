@@ -40,9 +40,9 @@ This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nit
 
 
 
-**The maximum HDR to SDR ratio is <u>8.0 for videos</u>**
+**The maximum HDR to SDR ratio is <u>7.99 for videos</u>**
 
-This maximum HDR to SDR ratio of 8.0 can be maintained up to around SDR=100 nits (visual estimate).
+This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nits (visual estimate).
 
 {: .d-flex .justify-content-center style="gap: 2rem; margin-left: -2rem;" }
 ![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
