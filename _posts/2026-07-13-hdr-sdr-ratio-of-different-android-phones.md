@@ -34,17 +34,17 @@ The full list is here: [https://helpx.adobe.com/ie/lightroom-cc/using/hdr-androi
 
 ### Google Pixel 7 Pro (Android 16)
 
-**The maximum HDR to SDR ratio is <u>5.0 for HDR photos viewed in Chrome</u>**
+**The maximum HDR to SDR ratio is <u>4.92 for HDR photos viewed in Chrome</u>**
 
-This maximum HDR to SDR ratio of 5.0 can be maintained up to around SDR=140 nits (visual estimate). The HDR/SDR ratio overlay can be enabled in `developer options` for devices running Android 15 or newer.
+This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nits (visual estimate). The HDR/SDR ratio overlay can be enabled in `developer options` for devices running Android 15 or newer.
 
-TODO: insert screenshot
+
 
 **The maximum HDR to SDR ratio is <u>8.0 for videos</u>**
 
 This maximum HDR to SDR ratio of 8.0 can be maintained up to around SDR=100 nits (visual estimate).
 
-TODO: insert screenshot
+![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: width="300"}
 
 ### Samsung Galaxy S26+
 
@@ -52,7 +52,7 @@ TODO: insert screenshot
 
 ![HDR SDR Ratio Image](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/IMG_3574.avif){: width="300"}
 
-### Honer Magic V3
+### Honor Magic V3
 
 This is a foldable phone from Honor, utilising the Snapdragon 8 Gen 3. The phone is running Android 16. Tested in July 2026.
 
@@ -61,5 +61,8 @@ The maximum HDR to SDR ratios are:
 - Videos (viewed in YouTube): 7.46
 
 Lightroom says "HDR Unavailable".
+
+![Honor Magic V3 Lightroom HDR Unavailable](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Honor%20Magic%20V3%20Lightroom%20HDR%20unavailable.jpg){: width="400"}
+
 
 
