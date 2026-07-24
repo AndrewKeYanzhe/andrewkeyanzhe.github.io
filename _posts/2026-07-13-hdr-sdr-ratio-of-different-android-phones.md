@@ -1,8 +1,8 @@
 ---
-title: HDR to SDR ratio of different Android phones
+title: HDR to SDR ratio of different smartphones
 date: 2026-07-13 23:55:00 +0800
 categories: [Tech Analysis]
-tags: [Android, HDR]
+tags: [Android, iPhone, HDR]
 pin: false
 math: true
 toc: false
@@ -16,6 +16,16 @@ image:
 
 > iPhone with Super Retina XDR display: Up to 8x SDR
 
+### Lightroom on iPhone
+
+I believe Lightroom supports HDR image preview on all OLED iPhones.
+
+The maximum HDR to SDR ratio for Lightroom on iPhone is `8.0`. In the screenshot, we can see that the histogram shows 3 bars of HDR headroom, so HDR pixels 3 stops above SDR white can be displayed. The 4th bar of HDR headroom in the histogram shows a lighter gray color, so this section exceeds the HDR 8.0 luminance ratio limit. Pixels brighter than 8x SDR will be clipped.
+
+![iPhone 14 Pro Max Lightroom](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/iPhone%2014%20Pro%20Max%20Lightroom.png){: width="300"}
+
+The screenshot was captured on an iPhone 14 Pro Max.
+
 
 ### Android compositor behavior
 
@@ -27,7 +37,7 @@ On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, an
 
 Lightroom on Android seems to enable HDR on certain devices using a whitelist system.
 
-As of July 2026, the list only includes Google and Samsung devices.
+As of July 2026, the list only includes Google devices since the Pixel 7, and Samsung devices since the S24.
 
 
 > So, there are many Android devices that do support mixed HDR SDR composition, but are unable to utilise Lightroom's HDR image preview due to the whitelist system. See the section on the Honor Magic V3.
@@ -51,6 +61,13 @@ This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nit
 {: .d-flex .justify-content-center style="gap: 2rem; margin-left: 0rem;" }
 ![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
 ![Pixel 7 Pro YouTube video](assets/2026-07-13-hdr-sdr-ratio-of-different-android-phones/Pixel%207%20Pro%20YouTube%20video.avif){: .normal width="300"}
+
+> This article contains HDR photos which are best viewed on an HDR-capable device and browser. Recommended setups:
+- Windows 11 + HDR ON + Chrome
+- Macbook Pro with internal XDR display + Chrome
+- iPhone running iOS 26
+- a recent Android device with mixed HDR SDR composition support and running Chrome
+{: .prompt-tip }
 
 ### Samsung Galaxy S26+
 
