@@ -1,8 +1,8 @@
 ---
-title: HDR to SDR ratio of different smartphones
+title: "HDR headroom and compositor behavior: Android vs iPhone"
 date: 2026-07-13 23:55:00 +0800
 categories: [Tech Analysis]
-tags: [Android, iPhone, HDR]
+tags: [Android, iPhone, Lightroom, HDR]
 pin: false
 math: true
 toc: false
