@@ -35,13 +35,13 @@ A discussion has been created on the Adobe forum [https://community.adobe.com/t5
 <!-- #### RAW image shot on the S5ii and converted to HDR AVIF -->
 
 <div class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start gap-3 mb-4">
-  <div class="text-center" style="max-width: 350px; width: 100%;" markdown="1">
-![Lightroom (Adobe Color)](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal width="350"}
+  <div class="text-center" style="flex: 1 1 0; max-width: 350px; width: 100%;" markdown="1">
+![Lightroom (Adobe Color)](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal style="width: 100%; max-width: 350px; height: auto;"}
 {: .mb-1 }
 <div style="font-size: 80%; color: #6d6c6c;">Lightroom (Adobe Color)</div>
   </div>
-  <div class="text-center" style="max-width: 350px; width: 100%;" markdown="1">
-![darktable](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal width="350"}
+  <div class="text-center" style="flex: 1 1 0; max-width: 350px; width: 100%;" markdown="1">
+![darktable](assets/2025-04-12-Lightroom_vs_darktable/P1123045_dt_web.avif){: .normal style="width: 100%; max-width: 350px; height: auto;"}
 {: .mb-1 }
 <div style="font-size: 80%; color: #6d6c6c;">darktable</div>
   </div>
