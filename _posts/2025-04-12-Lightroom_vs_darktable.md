@@ -34,7 +34,24 @@ A discussion has been created on the Adobe forum [https://community.adobe.com/t5
 </div>
 <!-- #### RAW image shot on the S5ii and converted to HDR AVIF -->
 
-<div class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start gap-3 mb-4">
+<style>
+  .responsive-comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .responsive-comparison {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<div class="responsive-comparison">
   <div class="text-center" style="flex: 1 1 0; max-width: 350px; width: 100%;" markdown="1">
 ![Lightroom (Adobe Color)](assets/2025-04-12-Lightroom_vs_darktable/P1123045_lr_web_adobe_color.avif){: .normal style="width: 100%; max-width: 350px; height: auto;"}
 {: .mb-1 }
