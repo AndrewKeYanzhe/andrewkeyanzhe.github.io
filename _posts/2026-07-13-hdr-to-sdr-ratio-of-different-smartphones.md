@@ -90,5 +90,84 @@ Lightroom says `HDR Unavailable`.
 
 ![Honor Magic V3 Lightroom HDR Unavailable](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/Honor%20Magic%20V3%20Lightroom%20HDR%20unavailable.jpg){: width="400"}
 
+### Technical deep-dive: How Android manages HDR headroom
+
+So, is there a hard limit in Android restricting photos to ~5.0x SDR and videos to ~8.0x SDR?
+
+<u>This section is still a work in progress. </u>
+
+<!-- TODO add TLDR conclusion, after i have checked -->
+<!-- The short answer is **no**. The Android OS framework itself doesn't impose a hard-coded cap of 5.0 or 8.0: -->
+
+* **AOSP Framework Capabilities**: In Android 15 (API level 35), the [`SurfaceView.setDesiredHdrHeadroom`](https://developer.android.com/reference/android/view/SurfaceView#setDesiredHdrHeadroom(float)) API allows applications to request headroom values anywhere from `1.0f` (pure SDR) up to `10000.0f`.
+
+
+#### Who decides the headroom on real devices?
+
+<u>This section is still a work in progress. </u>
+
+The actual HDR headroom isn't fixed globally; it's calculated and enforced dynamically at runtime by **device OEMs** on a per-model basis:
+
+In AOSP [`DisplayDeviceConfig.java`](https://android.googlesource.com/platform/frameworks/base/+/refs/heads/main/services/core/java/com/android/server/display/DisplayDeviceConfig.java), Android has a function `getHdrBrightnessFromSdr` that returns a float `hdrBrightness`, which I believe is a `0.0-1.0` float representing the Android software brightness value (non-linear mapping to physical nits). This function takes into account the SDR brightness level, the content's desired HDR to SDR ratio, and the OEM configuration in `mHbmData`.
+
+`getHdrBrightnessFromSdr` is an overloaded function that is typically called with 2 arguments `brightness` and `maxDesiredHdrSdrRatio`. This function then calls another overload of itself with 3 arguments `brightness`, `maxDesiredHdrSdrRatio`, and `sdrToHdrSpline`.
+
+
+
+```java
+// 2 argument function
+
+/**
+ * Calculate the HDR brightness for the
+ * specified SDR brightness, restricted by the
+ * maxDesiredHdrSdrRatio (the ratio between
+ * the HDR luminance and SDR luminance)
+ *
+ * @return the HDR brightness or
+ * BRIGHTNESS_INVALID when no mapping exists.
+ */
+public float getHdrBrightnessFromSdr(
+        float brightness,
+        float maxDesiredHdrSdrRatio) {
+    Spline sdrToHdrSpline =
+        mHbmData != null
+        ? mHbmData.sdrToHdrRatioSpline : null;
+    return getHdrBrightnessFromSdr(
+        brightness,
+        maxDesiredHdrSdrRatio,
+        sdrToHdrSpline);
+}
+
+// 3 argument function
+    public float getHdrBrightnessFromSdr(float brightness, float maxDesiredHdrSdrRatio,
+            @Nullable Spline sdrToHdrSpline) {
+...
+
+        return hdrBrightness;
+    }
+```
+
+
+
+* **OEM Vendor Config**: `mHbmData` holds the display configuration written by the OEM for that specific phone model (loaded from `/vendor/etc/displayconfig/display_config_*.xml`).
+* **The Spline Curve (`sdrToHdrRatioSpline`)**: The spline acts as a lookup curve (storing parallel control-point arrays for SDR nits and HDR ratios) to interpolate values smoothly.
+* **Return Value**: `hdrBrightness` — an Android software brightness value (`0.0‑1.0`
+, non-linear mapping to physical nits) representing the peak HDR brightness ceiling for the current SDR brightness level.
+
+
+<!-- TODO. check this part for accuracy -->
+
+<!-- #### Why do photos cap at ~5.0 while videos reach ~8.0?
+
+The reason photos and videos exhibit different headroom comes down to hardware composition pipelines:
+
+* **Photos (Chrome / Gallery / GPU Composition)**: Static images (both Ultra HDR gain maps and 10-bit PQ AVIFs) are rendered as static GPU layers (GLES / Vulkan / Skia). To preserve SDR UI text contrast, conserve battery, and protect against OLED burn-in during static viewing, OEM profile maps limit static image HDR headroom to roughly **5.0x SDR white** (~500 nits over 100 nits SDR white).
+* **Videos (`SurfaceView` / Hardware Overlays)**: Video players output frames via `SurfaceView`, which SurfaceFlinger routes directly to dedicated Hardware Composer (HWC) video overlay planes. Because moving video carries no burn-in risk and bypasses GPU composition, OEM configurations allow video overlays to burst up to **8.0x SDR white** (~800 to 1000 nits over 100 nits SDR white). -->
+
+
+
+
+
+
 
 
