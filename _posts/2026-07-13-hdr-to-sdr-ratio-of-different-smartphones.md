@@ -139,13 +139,15 @@ public float getHdrBrightnessFromSdr(
 }
 
 // 3 argument function
-    public float getHdrBrightnessFromSdr(float brightness, float maxDesiredHdrSdrRatio,
-            @Nullable Spline sdrToHdrSpline) {
-...
-
-        return hdrBrightness;
-    }
+public float getHdrBrightnessFromSdr(
+        float brightness,
+        float maxDesiredHdrSdrRatio,
+        @Nullable Spline sdrToHdrSpline) {
+    ...
+    return hdrBrightness;
+}
 ```
+
 
 
 
