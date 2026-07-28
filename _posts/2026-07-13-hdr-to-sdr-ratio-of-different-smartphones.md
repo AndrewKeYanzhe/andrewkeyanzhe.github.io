@@ -53,13 +53,20 @@ The full list is here: [https://helpx.adobe.com/ie/lightroom-cc/using/hdr-androi
 
 **The maximum HDR to SDR ratio is <u>4.92 for HDR photos viewed in Chrome</u>**
 
-This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nits (visual estimate). The HDR/SDR ratio overlay can be enabled in `developer options` for devices running Android 15 or newer.
+This maximum HDR to SDR ratio of 4.92 can be maintained up to around SDR=140 nits (visual estimate). 
+
+> The HDR/SDR ratio overlay can be enabled in `developer options` for devices running Android 15 or newer. One can test the HDR to SDR ratio for images by visiting this current website
+{: .prompt-tip }
 
 
 
 **The maximum HDR to SDR ratio is <u>7.99 for videos</u>**
 
-This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nits (visual estimate).
+This maximum HDR to SDR ratio of 7.99 can be maintained up to around SDR=100 nits (visual estimate of SDR white luminance).
+
+> This is the link for the 10,000 nit YouTube video: [https://youtu.be/QlLJMeEfSmA?si=s9CShiaDdAsZqcml](https://youtu.be/QlLJMeEfSmA?si=s9CShiaDdAsZqcml)
+{: .prompt-tip }
+
 
 {: .d-flex .justify-content-center style="gap: 2rem; margin-left: 0rem;" }
 ![Pixel 7 Pro Chrome photo](assets/2026-07-13-hdr-to-sdr-ratio-of-different-smartphones/Pixel%207%20Pro%20Chrome%20photo.avif){: .normal width="300"}
