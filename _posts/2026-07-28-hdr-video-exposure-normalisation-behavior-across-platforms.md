@@ -1,7 +1,7 @@
 ---
 title: "HDR video exposure normalisation behavior across platforms"
 date: 2026-07-28 15:37:00 +0800
-categories: [HDR]
+categories: [Tech Analysis]
 tags: [Display Compositor]
 published: true
 ---
