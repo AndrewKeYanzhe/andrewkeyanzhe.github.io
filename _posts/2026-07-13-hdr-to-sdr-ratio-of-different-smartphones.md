@@ -2,7 +2,7 @@
 title: "HDR headroom and compositor behavior: Android vs iPhone"
 date: 2026-07-13 23:55:00 +0800
 categories: [Tech Analysis]
-tags: [Android, iPhone, Lightroom, HDR]
+tags: [Android, iPhone, Lightroom, HDR, Display Compositor]
 pin: false
 math: true
 toc: false
