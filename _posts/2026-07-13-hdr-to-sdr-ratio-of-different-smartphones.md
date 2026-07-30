@@ -34,7 +34,6 @@ The screenshot was captured on an iPhone 14 Pro Max.
 
 On Android, it appears that the maximum HDR to SDR ratio is `5.0 for images`, and `8.0 for videos`. However, I have not tested every Android configuration and I cannot say for certain if there exists any Android device with a higher HDR to SDR ratio for photos or videos.
 
-<u>This section is a work in progress.</u>
 
 ### Lightroom on Android
 
