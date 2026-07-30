@@ -19,8 +19,9 @@ image:
 
 ### Behaviour of Chrome on Windows
 
-- HDR `enabled`
-- Windows `SDR brightness` set to `100 nits` (5% on the slider)
+These settings are used:
+- HDR is `enabled` in Windows settings
+- The Windows `OS SDR brightness` is set to `100 nits` (5% on the slider)
 
 > The following screenshot will show the correct nits when viewed on a device with SDR brightness set to 100 nits
 - on Windows, set SDR brightness to 5%
