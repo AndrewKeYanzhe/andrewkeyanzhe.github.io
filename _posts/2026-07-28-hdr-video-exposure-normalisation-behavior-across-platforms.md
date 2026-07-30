@@ -29,7 +29,7 @@ These settings are used:
 {: .prompt-tip }
 
 - We can see that for Chrome on Windows, PQ HDR videos are displayed without normalising to `OS SDR brightness in nits`, so video pixels' nit values sent to the display matches that encoded in the video
-- However, HLG HDR videos are normalised to `OS SDR brightness in nits`, using a factor of `OS SDR brightness in nits/203`. So the 100 nit HLG pattern is shown at around 49 nits. **⚠️ This does not match the pixel nits as encoded in the HLG video, when one assumes the 1000 nit HLG tranfer function** (commonly used by reference displays and DaVinci Resolve) 
+- However, HLG HDR videos are normalised to `OS SDR brightness in nits`, using a factor of `OS SDR brightness in nits/203`. So the 100 nit HLG pattern is shown at around 49 nits. **⚠️ This does not match the pixel nits as encoded in the HLG video, when one assumes the 1000 nit HLG transfer function** (commonly used by reference displays and DaVinci Resolve) 
 
 
 ![img-description](assets/2026-07-28-hdr-video-exposure-normalisation-behavior-across-platforms/Still 2026-07-29 081521_1.1.1 cropped.png){: width="600" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); border-radius: 6px;"}
