@@ -8,6 +8,8 @@ image:
   path: assets/2026-08-01-huawei-pura-70-pro-plus-harmonyos-review/pura-70-pro-plus-white-front-and-back padded 40x21.png
 ---
 
+![Huawei Pura 70 Pro+](assets/2026-08-01-huawei-pura-70-pro-plus-harmonyos-review/pura-70-pro-plus-white-front-and-back.jpg){: width="400"}
+
 <u>This post is a work in progress.</u>
 
 Tested on HarmonyOS 6.1.0.117
