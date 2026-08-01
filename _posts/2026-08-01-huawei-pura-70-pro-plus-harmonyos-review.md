@@ -2,7 +2,7 @@
 title: "Huawei Pura 70 Pro+ HarmonyOS Review"
 date: 2026-08-01 11:00:00 +0800
 categories: [Tech Analysis]
-tags: [Huawei, HarmonyOS, Smartphone, Review]
+tags: [Huawei, 华为, 华为手机, Pura 70 Pro+, HarmonyOS, HarmonyOS 6, 鸿蒙, 鸿蒙OS, 鸿蒙系统, 纯血鸿蒙, Smartphone, Review]
 published: true
 ---
 
