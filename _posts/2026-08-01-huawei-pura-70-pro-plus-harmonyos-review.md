@@ -8,7 +8,7 @@ published: true
 
 <u>This post is a work in progress.</u>
 
-Tested on HarmonyEOS 6.1.0.117
+Tested on HarmonyOS 6.1.0.117
 
 ### App compatibility
 
