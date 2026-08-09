@@ -21,4 +21,6 @@ Fortnite ❌
 - When re-launched, Fortnite crashes to the home screen every time and is unable to load into the lobby menu.
 - Tested on 1 Aug 2026
 
+### Video Recording
 
+HDR video recording is only available up to 4K 30fps. At 4K 60fps, it becomes SDR.
