@@ -10,6 +10,8 @@ published: true
 
 ## Smartphone max package power
 
+<u>This section is a work in progress. I will try to find package power, or estimate from total device power.</u>
+
 * The **iPhone 17 Pro Max** can achieve up to **6.1&nbsp;W** of total device power.
 * Older iPhones like the **iPhone 15 Pro Max** draw around **4.7&nbsp;W**.
 * Many **Android flagships** can safely be assumed to be capable of at least **4.5&nbsp;W** of sustained total device power.
