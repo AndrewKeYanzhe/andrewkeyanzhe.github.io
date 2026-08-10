@@ -4,6 +4,8 @@ date: 2026-08-10 11:17:00 +0800
 categories: [Tech Analysis]
 tags: [Smartphone, Power Consumption, Benchmarks]
 published: true
+image:
+  path: /assets/2026-08-10-smartphone-power-efficiency-comparison/Screenshot (316) padded.png
 ---
 
 <u>This post is a work in progress.</u>
