@@ -37,4 +37,6 @@ Source: 极客湾 Geekerwan - iPhone 17 series performance analysis ([https://yo
 
 ![Kirin 9010 SPEC2017 Efficiency Curve]({{ site.baseurl }}/assets/2026-08-10-smartphone-power-efficiency-comparison/Kirin%209010%20SEPC2017%20cropped.png)
 
-Source: 极客湾 Geekerwan - Huawei Kirin 9010 in-depth analysis ([https://youtu.be/73XUeYRFsZU?si=8uutjkdHqqgTgdjc&t=408](https://youtu.be/73XUeYRFsZU?si=8uutjkdHqqgTgdjc&t=408))
+![Geekbench 5 CPU Power Efficiency Curve]({{ site.baseurl }}/assets/2026-08-10-smartphone-power-efficiency-comparison/Screenshot%20(321)%20cropped.png)
+
+Source: 极客湾 Geekerwan - Huawei Kirin 9010 in-depth analysis ([https://youtu.be/73XUeYRFsZU?si=RXqVKMeL_exN-e2c&t=477](https://youtu.be/73XUeYRFsZU?si=RXqVKMeL_exN-e2c&t=477))
