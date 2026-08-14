@@ -8,14 +8,14 @@ published: true
 
 A comparison of theoretical peak memory bandwidth, bus widths, and memory standards across mobile SoCs, laptop workstations, and discrete laptop GPUs:
 
-| Device /<br>Processor | Memory bus<br>width | Memory<br>standard | Peak<br>bandwidth |
+| Device /<br>Processor | Peak<br>bandwidth | Memory bus<br>width | Memory<br>standard |
 | :--- | :--- | :--- | :--- |
-| **iPhone 14 Pro**<br>(A16 Bionic) | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) | 51.2 GB/s |
-| **iPhone 15 Pro**<br>(A17 Pro) | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) | 51.2 GB/s |
-| **iPhone 16 Pro**<br>(A18 Pro) | 64-bit<br>(4 × 16-bit) | LPDDR5X-7500<br>(7,500 MT/s) | 60.0 GB/s |
-| **Dell Precision**<br>(13th Gen Intel) | 128-bit<br>(Dual-channel) | DDR5-4800 to<br>DDR5-5600 | 76.8 – 89.6 GB/s |
-| **MacBook Pro**<br>(M1 Pro) | 256-bit<br>(4 × 64-bit) | LPDDR5-6400<br>(6,400 MT/s) | 200.0 GB/s |
-| **RTX 4060**<br>(Laptop GPU) | 128-bit<br>(4 × 32-bit) | GDDR6<br>(16 Gbps) | 256.0 GB/s |
+| **iPhone 14 Pro**<br>(A16 Bionic) | 51.2 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) |
+| **iPhone 15 Pro**<br>(A17 Pro) | 51.2 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) |
+| **iPhone 16 Pro**<br>(A18 Pro) | 60.0 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5X-7500<br>(7,500 MT/s) |
+| **Dell Precision**<br>(13th Gen Intel) | 76.8 – 89.6 GB/s | 128-bit<br>(Dual-channel) | DDR5-4800 to<br>DDR5-5600 |
+| **MacBook Pro**<br>(M1 Pro) | 200.0 GB/s | 256-bit<br>(4 × 64-bit) | LPDDR5-6400<br>(6,400 MT/s) |
+| **RTX 4060**<br>(Laptop GPU) | 256.0 GB/s | 128-bit<br>(4 × 32-bit) | GDDR6<br>(16 Gbps) |
 
 *Note: The RTX 4060 Laptop GPU comes configured with **8 GB** of dedicated GDDR6 VRAM.*
 
