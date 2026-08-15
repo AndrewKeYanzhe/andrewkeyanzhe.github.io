@@ -2,7 +2,7 @@
 title: "HDR Experience in Ubuntu 26.04 with NVIDIA RTX 2080 over HDMI 2.0b"
 date: 2026-08-15 23:15:00 +0800
 categories: [Tech Analysis, Linux]
-tags: [Ubuntu, HDR, NVIDIA, RTX 2080, HDMI, OLED]
+tags: [Ubuntu, HDR, NVIDIA, RTX 2080, HDMI, OLED, Chrome, Wayland]
 pin: false
 math: false
 toc: true
@@ -16,7 +16,7 @@ Quick notes on running HDR10 on Ubuntu 26.04 LTS using KDE Plasma 6 (Wayland) an
 ## Hardware & Setup
 
 - **OS / Desktop**: Ubuntu 26.04 LTS with KDE Plasma 6 (KWin Wayland)
-- **GPU**: NVIDIA GeForce RTX 2080 (Turing)
+- **GPU**: NVIDIA GeForce RTX 2080 (Turing) — Driver `nvidia-driver-595-open` & Mesa 26.0
 - **Display / TV**: Samsung S95F 65" QD-OLED TV
   - On Windows and macOS, I normally use it at `4K 120Hz 4:4:4 10-bit with HDR on`
   - The TV supports up to 165 Hz (I haven't tested the bit depth and chroma sampling at this mode)
@@ -35,5 +35,91 @@ _KDE Plasma Display Configuration panel._
 - **HDMI Bandwidth**: 18.0 Gbps (HDMI 2.0b max limit)
 - **4K 60Hz 4:4:4 10-bit**: Exceeds HDMI 2.0b bandwidth limit (~20.05 Gbps required); requires chroma subsampling (4:2:2/4:2:0) or 8-bit dithered color
 
-> **TODO:** Test if 10b and 444 chroma sampling are working
-{: .prompt-info }
+---
+
+## Google Chrome HDR Setup & Essential Fixes
+
+Getting HDR playback and wide color gamut rendering working in Google Chrome on Linux requires specific flags, environment variables, and bypassing hidden desktop launcher traps.
+
+### 1. Persistent Environment Variable
+
+KDE Plasma 6's Wayland compositor requires `ENABLE_HDR_WSI=1` to expose Vulkan / Wayland WSI HDR protocol interfaces to Chromium and MPV.
+
+Create `~/.config/environment.d/hdr.conf`:
+```env
+ENABLE_HDR_WSI=1
+```
+Also append to `~/.bashrc`:
+```bash
+export ENABLE_HDR_WSI=1
+```
+
+### 2. Chrome Command-Line Flags
+
+Configure native Wayland graphics, EGL, and HDR transfer functions in `~/.config/chrome-flags.conf`:
+
+```text
+--ozone-platform=wayland
+--use-gl=egl
+--force-color-profile=scrgb-linear
+--enable-features=UseSkiaRenderer,ColorManagement,HasHDRHeadroom
+```
+
+*(Note: In modern Chromium 120+, `ColorManagement` and `HasHDRHeadroom` automatically handle HDR transfer functions and color space negotiation with KWin Wayland, so explicit `UseHDRTransferFunction` args are no longer required.)*
+
+### 3. The Desktop Launcher Trap (`.desktop` Override)
+
+> **CRITICAL GOTCHA: Start Menu / Application Launcher Forcing X11**
+> 
+> Even with `chrome-flags.conf` properly configured, launching Chrome via the Start Menu / Windows key (KDE Application Menu) will still fail to render HDR if desktop shortcuts override the display backend.
+> 
+> Local `.desktop` launcher files (e.g. `~/.local/share/applications/google-chrome.desktop`) often hardcode `--ozone-platform=x11` into their `Exec=` lines:
+> 
+> ```ini
+> # BROKEN (.desktop shortcut override)
+> Exec=/usr/bin/google-chrome-stable --ozone-platform=x11 %U
+> ```
+> 
+> **The Fix:** Edit `~/.local/share/applications/google-chrome.desktop` and replace `--ozone-platform=x11` with `--ozone-platform=wayland` across all `Exec=` lines (Main, New Window, Incognito):
+> 
+> ```ini
+> # FIXED
+> Exec=/usr/bin/google-chrome-stable --ozone-platform=wayland %U
+> ```
+> 
+> Then refresh KDE's desktop application cache:
+> ```bash
+> update-desktop-database ~/.local/share/applications
+> kbuildsycoca6
+> ```
+{: .prompt-danger }
+
+### 4. Background Master Process Lock-in
+
+Chrome uses a single persistent master process. Simply closing browser windows leaves the master process running in the background. If it was originally launched under X11, opening Chrome again will attach to the existing X11 instance regardless of updated flags.
+
+**Always perform a hard restart when updating flags:**
+```bash
+killall -9 chrome google-chrome google-chrome-stable
+```
+
+---
+
+## MPV Video Streaming Alternative
+
+For direct YouTube HDR playback or local HDR video files without browser compositor overhead, MPV provides native Vulkan HDR passthrough.
+
+Add to `~/.config/mpv/mpv.conf`:
+```ini
+vo=gpu-next
+gpu-api=vulkan
+target-colorspace-hint=auto
+tone-mapping=hdr
+target-peak=1000
+hdr-compute-peak=yes
+hdr-peak-detect=yes
+```
+Launch YouTube HDR videos directly:
+```bash
+ENABLE_HDR_WSI=1 mpv "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+```
