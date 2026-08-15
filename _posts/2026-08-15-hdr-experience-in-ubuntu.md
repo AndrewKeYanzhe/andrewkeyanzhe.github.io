@@ -118,4 +118,6 @@ Tested YouTube HDR streaming using [The World in 4K HDR](https://www.youtube.com
 ### HDR AVIF Image Playback
 
 - **Color Banding in HDR AVIF (PQ)**: Noticeable banding also appears in bright sky regions when viewing static PQ-encoded HDR AVIF images (non-gainmap), such as those featured in the [Visit to Paris and Strasbourg](https://andrewkeyanzhe.github.io/posts/France_and_Germany/) post.
+  - *Cross-OS Comparison*: These exact same photos render smoothly without color banding when viewed in Chrome under Windows and macOS.
+
 
