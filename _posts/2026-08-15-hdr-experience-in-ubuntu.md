@@ -1,5 +1,5 @@
 ---
-title: "HDR Experience in Ubuntu 26.04 with NVIDIA RTX 2080 over HDMI 2.0b"
+title: "HDR Experience in Ubuntu 26.04 (Chrome, NVIDIA RTX 2080)"
 date: 2026-08-15 23:15:00 +0800
 categories: [Tech Analysis, Linux]
 tags: [Ubuntu, HDR, NVIDIA, RTX 2080, HDMI, OLED, Chrome, Wayland]
