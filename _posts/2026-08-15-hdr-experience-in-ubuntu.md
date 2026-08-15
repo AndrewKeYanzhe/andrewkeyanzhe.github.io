@@ -22,7 +22,7 @@ Quick notes on running HDR10 on Ubuntu 26.04 LTS using KDE Plasma 6 (Wayland) an
   - The TV supports up to 165 Hz (I haven't tested the bit depth and chroma sampling at this mode)
 
 > **Cable Matters Adapter Issue (Windows vs. Linux):**
-> - On **Windows**, a `Cable Matters DP 1.4 to HDMI 2.1 adapter (Model 201428)` drives `4K 120Hz 4:4:4 10-bit HDR`.
+> - On **Windows**, a `Cable Matters USB-C (DP 1.4 Alt Mode) to HDMI 2.1 adapter (Model 201428)` drives `4K 120Hz 4:4:4 10-bit HDR`.
 > - On **Linux**, this adapter fails to expose HDR (the HDR toggle does not appear in KDE display settings).
 > - **Workaround**: Connected directly via native **RTX 2080 HDMI 2.0b port** to the TV for HDR to be recognized.
 {: .prompt-warning }
