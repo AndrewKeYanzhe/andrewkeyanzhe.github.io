@@ -21,6 +21,17 @@ Fortnite ❌
 - When re-launched, Fortnite crashes to the home screen every time and is unable to load into the lobby menu.
 - Tested on 1 Aug 2026
 
+GTA: San Andreas (Android version)
+- Works with Xbox Series X controller.
+- FPS is a bit unstable; visually does not look like it is maintaining 30 fps.
+
+异环
+- Does not support Xbox Series X controller.
+
+三角洲行动
+- Does not support Xbox Series X controller.
+
+
 ### Video Recording
 
 HDR video recording is only available up to 4K 30fps. At 4K 60fps, it becomes SDR.
