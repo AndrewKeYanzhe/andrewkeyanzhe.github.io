@@ -34,5 +34,5 @@ _KDE Plasma Display Configuration panel._
 - **HDMI Bandwidth**: 18.0 Gbps (HDMI 2.0b max limit)
 - **4K 60Hz 4:4:4 10-bit**: Exceeds HDMI 2.0b bandwidth limit (~20.05 Gbps required); requires chroma subsampling (4:2:2/4:2:0) or 8-bit dithered color
 
-> **TODO:** Test if 10b and 444 chroma sampling are both working
+> **TODO:** Test if 10b and 444 chroma sampling are working
 {: .prompt-info }
