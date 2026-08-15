@@ -103,23 +103,4 @@ Chrome uses a single persistent master process. Simply closing browser windows l
 killall -9 chrome google-chrome google-chrome-stable
 ```
 
----
 
-## MPV Video Streaming Alternative
-
-For direct YouTube HDR playback or local HDR video files without browser compositor overhead, MPV provides native Vulkan HDR passthrough.
-
-Add to `~/.config/mpv/mpv.conf`:
-```ini
-vo=gpu-next
-gpu-api=vulkan
-target-colorspace-hint=auto
-tone-mapping=hdr
-target-peak=1000
-hdr-compute-peak=yes
-hdr-peak-detect=yes
-```
-Launch YouTube HDR videos directly:
-```bash
-ENABLE_HDR_WSI=1 mpv "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
-```
