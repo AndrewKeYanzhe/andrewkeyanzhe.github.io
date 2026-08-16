@@ -110,14 +110,18 @@ killall -9 chrome google-chrome google-chrome-stable
 
 Tested YouTube HDR streaming using [The World in 4K HDR](https://www.youtube.com/watch?v=tO01J-M3g0U):
 
-- **Color Banding**: Noticeable color banding observed in bright sky gradients.
+> **Color Banding in Video Playback**: Noticeable color banding observed in bright sky gradients.
+{: .prompt-warning }
+
 - **Bit Depth Uncertainty**: Currently unverified whether the output pipeline is delivering true 10-bit color depth or truncating/dithering to 8-bit.
 - **Refresh Rate Experiments**: Dropping the refresh rate to 30 Hz still exhibits banding.
   - *Bandwidth Note*: 4K @ 30Hz 4:4:4 10-bit theoretically fits within the HDMI 2.0b bandwidth budget (~11.1 Gbps vs. 18 Gbps max), though further hardware signal validation (e.g. monitor OSD/EDID parsing) is needed to confirm 8-bit vs. 10-bit active output.
 
 ### HDR AVIF Image Playback
 
-- **Color Banding in HDR AVIF (PQ)**: Noticeable banding also appears in bright sky regions when viewing static PQ-encoded HDR AVIF images (non-gainmap), such as those featured in the [Visit to Paris and Strasbourg](https://andrewkeyanzhe.github.io/posts/France_and_Germany/) post.
-  - *Cross-OS Comparison*: These exact same photos render smoothly without color banding when viewed in Chrome under Windows and macOS.
+> **Color Banding in HDR AVIF (PQ)**: Noticeable banding appears in bright sky regions when viewing static PQ-encoded HDR AVIF images (non-gainmap), such as those featured in the [Visit to Paris and Strasbourg](https://andrewkeyanzhe.github.io/posts/France_and_Germany/) post.
+{: .prompt-warning }
+
+- **Cross-OS Comparison**: These exact same photos render smoothly without color banding when viewed in Chrome under Windows and macOS.
 
 
