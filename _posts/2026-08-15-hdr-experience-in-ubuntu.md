@@ -1,7 +1,7 @@
 ---
 title: "HDR Experience in Ubuntu 26.04 (Chrome, NVIDIA RTX 2080)"
 date: 2026-08-15 23:15:00 +0800
-categories: [Tech Analysis, Linux]
+categories: [Tech Analysis]
 tags: [Ubuntu, Ubuntu 26.04, HDR, Display Compositor, NVIDIA, RTX 2080, HDMI, Chrome, Wayland, Cable Matters, Cable Matters 201428]
 pin: false
 math: false
