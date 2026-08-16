@@ -2,7 +2,7 @@
 title: "HDR Experience in Ubuntu 26.04 (Chrome, NVIDIA RTX 2080)"
 date: 2026-08-15 23:15:00 +0800
 categories: [Tech Analysis, Linux]
-tags: [Ubuntu, HDR, NVIDIA, RTX 2080, HDMI, OLED, Chrome, Wayland]
+tags: [Ubuntu, Ubuntu 26.04, HDR, Display Compositor, NVIDIA, RTX 2080, HDMI, Chrome, Wayland, Cable Matters, Cable Matters 201428]
 pin: false
 math: false
 toc: true
@@ -11,7 +11,7 @@ image:
   path: assets/2026-08-15-hdr-experience-in-ubuntu/display_settings_cropped.png
 ---
 
-Quick notes on running HDR10 on Ubuntu 26.04 LTS using KDE Plasma 6 (Wayland) and NVIDIA GeForce RTX 2080.
+Quick notes on running HDR10 on Ubuntu 26.04 LTS using KDE Plasma 6 (Wayland) and NVIDIA GeForce RTX 2080. 
 
 ## Hardware & Setup
 
@@ -43,7 +43,7 @@ Getting HDR playback and wide color gamut rendering working in Google Chrome on 
 
 ### 1. Persistent Environment Variable
 
-KDE Plasma 6's Wayland compositor requires `ENABLE_HDR_WSI=1` to expose Vulkan / Wayland WSI HDR protocol interfaces to Chromium and MPV.
+KDE Plasma 6's Wayland compositor requires `ENABLE_HDR_WSI=1` to expose Vulkan / Wayland WSI HDR protocol interfaces to Chromium.
 
 Create `~/.config/environment.d/hdr.conf`:
 ```env
