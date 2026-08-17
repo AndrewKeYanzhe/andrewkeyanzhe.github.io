@@ -13,7 +13,7 @@ A comparison of theoretical peak memory bandwidth, bus widths, and memory standa
 | **iPhone 14 Pro**<br>(A16 Bionic) | 51.2 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) |
 | **iPhone 15 Pro**<br>(A17 Pro) | 51.2 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5-6400<br>(6,400 MT/s) |
 | **iPhone 16 Pro**<br>(A18 Pro) | 60.0 GB/s | 64-bit<br>(4 × 16-bit) | LPDDR5X-7500<br>(7,500 MT/s) |
-| **Dell Precision**<br>(13th Gen Intel) | 76.8 – 89.6 GB/s | 128-bit<br>(Dual-channel) | DDR5-4800 to<br>DDR5-5600 |
+| **Dell Precision 7680**<br>(13th Gen Intel) | 89.6 GB/s | 128-bit<br>(Dual-channel) | DDR5-5600 |
 | **Desktop PC**<br>(Dual-channel DDR5) | 102.4 GB/s | 128-bit<br>(Dual-channel) | DDR5-6400<br>(6,400 MT/s) |
 | **MacBook Pro**<br>(M1 Pro) | 200.0 GB/s | 256-bit<br>(4 × 64-bit) | LPDDR5-6400<br>(6,400 MT/s) |
 | **RTX 4060**<br>(Laptop GPU) | 256.0 GB/s | 128-bit<br>(4 × 32-bit) | GDDR6<br>(16 Gbps) |
