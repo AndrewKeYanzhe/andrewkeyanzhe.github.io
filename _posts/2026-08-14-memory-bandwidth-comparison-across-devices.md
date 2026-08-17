@@ -16,13 +16,13 @@ A comparison of theoretical peak memory bandwidth, bus widths, and memory standa
 | **Dell Precision 7680**<br>(13th Gen Intel) | 89.6 GB/s | 128-bit<br>(Dual-channel) | DDR5-5600 |
 | **Desktop PC**<br>(Dual-channel DDR5) | 102.4 GB/s | 128-bit<br>(Dual-channel) | DDR5-6400<br>(6,400 MT/s) |
 | **MacBook Pro**<br>(M1 Pro) | 200.0 GB/s | 256-bit<br>(4 × 64-bit) | LPDDR5-6400<br>(6,400 MT/s) |
-| **RTX 4060**<br>(Laptop GPU) | 256.0 GB/s | 128-bit<br>(4 × 32-bit) | GDDR6<br>(16 Gbps) |
+| **RTX 3500 Ada**<br>(Laptop GPU) | 432.0 GB/s | 192-bit<br>(6 × 32-bit) | GDDR6 |
 
-*Note: The RTX 4060 Laptop GPU comes configured with **8 GB** of dedicated GDDR6 VRAM.*
+*Note: The NVIDIA RTX 3500 Ada Laptop GPU typically comes configured with **12 GB** of GDDR6 VRAM.*
 
 ## Key observations
 
 * **Smartphone SoCs:** Moving from LPDDR5-6400 to LPDDR5X-7500 on the A18 Pro brings memory bandwidth to 60.0 GB/s without widening the 64-bit bus.
 * **Desktop DDR5:** Standard dual-channel DDR5-6400 on a desktop platform achieves 102.4 GB/s of memory bandwidth across its 128-bit bus.
 * **Apple Silicon unified memory:** The M1 Pro achieves 200 GB/s by employing a wide 256-bit bus, feeding both CPU and GPU from a shared high-bandwidth pool.
-* **Discrete GPUs vs. host RAM:** While standard dual-channel DDR5 delivers ~76–102 GB/s, discrete GPUs like the RTX 4060 utilize high-speed GDDR6 to reach 256 GB/s over a 128-bit bus.
+* **Discrete GPUs vs. host RAM:** While standard dual-channel DDR5 delivers ~76–102 GB/s, discrete GPUs like the RTX 3500 Ada utilize high-speed GDDR6 to reach 432 GB/s over a 192-bit bus.
