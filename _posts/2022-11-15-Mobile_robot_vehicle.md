@@ -3,7 +3,7 @@ title: Cambridge Engineering Integrated Design Project
 description: Year 2 Cambridge Engineering group project — a line-following robot car with mechanical arms, built from scratch using Arduino and C++.
 # author: Andrew Ke
 date: 2022-11-15 11:33:00 +0000
-categories: [School projects]
+categories: [School Projects]
 tags: [University of Cambridge, robotics]
 # pin: true
 math: true

@@ -1,7 +1,7 @@
 ---
 title: Starship flight test 5
 date: 2025-06-16 22:00:00 +0100  
-categories: [SpaceX]  
+categories: [Photography Portfolio]
 tags: [SpaceX, Canon EOS R5, Canon EF 600mm f/4L IS II USM,
  darktable, HDR]  
 pin: true  
