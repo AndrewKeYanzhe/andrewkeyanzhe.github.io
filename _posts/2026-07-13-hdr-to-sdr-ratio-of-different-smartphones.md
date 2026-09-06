@@ -17,18 +17,18 @@ image:
 
 ### Ideal feature sets of an OS compositor
 
-1. The platform owner should make their best effort to document the maximum HDR to SDR luminance ratio for specific devices. For example:
+1. The platform owner should make their best effort to **document the maximum HDR to SDR luminance ratio for specific devices**. For example:
     - On iPhone, this ratio has been documented by Apple to be `8.0`.
     - For platforms with many third-party OEM partners, ideally the platform owner would have a website documenting the maximum HDR to SDR luminance ratio for each device (contributed by the platform owner, OEM partners, or even users). Currently, the way to obtain this information on Android is to purchase each phone separately and make the API call yourself.
 
-2. The compositor should allow 2 transfer functions
+2. The compositor should **allow 2 transfer functions - clip and roll-off**:
     - `Clip HDR highlights` at the panel peak luminance
         - This is the preferred behavior for content mastering, and Lightroom on iOS has utilised this pathway.
-    - `Roll off HDR highlights` to preserve details given the constraint of the panel peak luminance
+    - `Roll-off HDR highlights` to preserve details given the constraint of the panel peak luminance
 
     Based on my testing, `Clip at panel peak` is achievable on iOS, macOS and Windows (Windows applications can output HDR content with no tonemapping, so when paired with a mastering display like a Sony BVM-HX3110, one is able to achieve the `clip at panel peak` display transfer function)
 
-3. The platform owner should **document the HDR tonemapping strategy** if it is a function of the ambient illuminantion or system SDR brightness setting. If the HDR content tonemapping strategy differs for desktops and laptops (true for Windows), this should be documented by the platform owner. Broadly speaking, there are 2 strategies:
+3. The platform owner should **document the HDR tonemapping strategy if it is a function of the ambient illumination or system SDR brightness setting**. If the HDR content tonemapping strategy differs for desktops and laptops (true for Windows), this should be documented by the platform owner. Broadly speaking, there are 2 strategies:
 
     - `HDR content is normalised to current OS SDR white`. HDR content exposure has a linear gain of (current OS SDR white in nits/normalisation point in nits) applied.
     - `HDR content is displayed with absolute nits`. This is the behaviour of HDR content on Windows, so applications like Chromium perform the normalisation of HDR framebuffers by itself.
