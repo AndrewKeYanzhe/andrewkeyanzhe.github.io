@@ -4,7 +4,7 @@ date: 2026-10-03 00:00:00 +0800
 categories: [Tech Analysis]
 tags: [iOS, Photos, iPhone, Video, HDR]
 toc: true
-published: false
+published: true
 ---
 
 This post records video format support tested in the iOS Photos app.
