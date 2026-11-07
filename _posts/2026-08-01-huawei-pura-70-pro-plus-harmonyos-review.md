@@ -2,7 +2,7 @@
 title: "Huawei Pura 70 Pro+ HarmonyOS Review"
 date: 2026-08-01 11:00:00 +0800
 categories: [Tech Analysis]
-tags: [Huawei, 华为, 华为手机, Pura 70 Pro+, HarmonyOS, HarmonyOS 6, 鸿蒙, 鸿蒙OS, 鸿蒙系统, 纯血鸿蒙, Smartphone, Review]
+tags: [Huawei, 华为, 华为手机, Pura 70 Pro+, HarmonyOS, HarmonyOS 7, HarmonyOS 6, 鸿蒙, 鸿蒙OS, 鸿蒙系统, 纯血鸿蒙, Smartphone, Review]
 published: true
 image:
   path: assets/2026-08-01-huawei-pura-70-pro-plus-harmonyos-review/pura-70-pro-plus-white-front-and-back padded 40x21.png
@@ -12,7 +12,21 @@ image:
 
 <u>This post is a work in progress.</u>
 
-Tested on HarmonyOS 6.1.0.117
+## HarmonyOS 7
+
+Tested on HarmonyOS 7.0.0.111 SP10.
+
+### Video playback
+
+VLC through `卓易通`:
+- HEVC HDR playback works and displays in HDR.
+- The VP9 HDR file does not display in HDR and appears to be tone mapped to SDR.
+
+This records the observed playback behavior only. It does not establish whether the difference is caused by VLC's VP9 software-decoding/rendering path, `卓易通`, or another part of the video pipeline.
+
+## HarmonyOS 6
+
+Tested on HarmonyOS 6.1.0.117.
 
 ### App compatibility
 
