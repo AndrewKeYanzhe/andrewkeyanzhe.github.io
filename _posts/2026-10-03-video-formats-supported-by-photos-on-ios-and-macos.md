@@ -5,6 +5,8 @@ categories: [Tech Analysis]
 tags: [iOS, macOS, Photos, iPhone, Video, HDR]
 toc: true
 published: true
+redirect_from:
+  - /posts/video-formats-supported-by-the-ios-photos-app/
 ---
 
 This post records video import tests in Photos on iOS and macOS.
