@@ -28,7 +28,7 @@ On the iPhone 14 Pro Max running iOS 27.0, Photos imported examples of **4K, 10-
 
 ## Detailed import tests
 
-Two Log Cam videos (4K, 10-bit, 4:4:4 HEVC, roughly 240 Mb/s) as well as their re-encoded 4:4:4 PQ BT.2020 HDR versions were tested for import into the iPhone Photos app.
+Two Log Cam videos (4K, 10-bit, 4:4:4 HEVC, roughly 240 Mb/s, recorded by Log Cam 1.9) as well as their re-encoded 4:4:4 PQ BT.2020 HDR versions were tested for import into the iPhone Photos app.
 
 The device was an iPhone 14 Pro Max running iOS 27.2.1.
 
